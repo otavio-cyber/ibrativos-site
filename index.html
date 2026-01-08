@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBRA - Instituto Brasileiro de Rastreamento de Ativos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            'ibra-blue': '#1e3a8a',
+            'ibra-light-blue': '#3b82f6',
+            'ibra-gold': '#f59e0b',
+            'ibra-gray': '#374151',
+            'ibra-light-gray': '#f8fafc',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .hero-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top,
+          rgba(3, 17, 58, 0.85) 0%,
+          rgba(30, 58, 138, 0.55) 45%,
+          rgba(30, 58, 138, 0.15) 75%,
+          rgba(30, 58, 138, 0.05) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+
+    .hero-bg {
+      position: relative;
+      background: url('assets/images/background_hero_seminario.jpg') no-repeat center top;
+      background-size: cover;
+      background-color: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #4b5563, transparent);
+    }
+  </style>
+</head>
+
+<body class="font-inter bg-white">
+  <!-- HEADER PADRONIZADO -->
+  <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo clicável que leva a https://ibrativos.com.br -->
+        <div class="flex items-center">
+          <a href="https://ibrativos.com.br">
+            <img src="assets/logos/logo_final_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento"
+              class="h-12 md:h-16 max-w-56 object-contain">
+          </a>
+        </div>
+
+
+        <!-- Navigation Desktop -->
+        <nav class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">HOME</a>
+          <a href="#sobre" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">O IBRA</a>
+          <a href="#selo" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">SELO</a>
+
+          <!-- Dropdown Eventos -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+              EVENTOS
+              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <!-- Dropdown Menu -->
+            <div
+              class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-3">
+                <a href="seminario-2025.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">VII Seminário 2025</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2024.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">VI Seminário 2024</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2023.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">V Seminário 2023</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2022.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">IV Seminário 2022</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">III Seminário 2021</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <!-- <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">II Seminário 2020</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">I Seminário 2019</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">Seminário 2018</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <a href="#noticias" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">NOTÍCIAS</a>
+          <a href="#contato" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">CONTATO</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden flex flex-col space-y-1.5 p-2" id="mobile-menu-btn" aria-label="Menu">
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line1"></div>
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line2"></div>
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line3"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+      <div class="px-4 py-4 space-y-1">
+        <a href="index.html"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">HOME</a>
+        <a href="#sobre"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">O
+          IBRA</a>
+        <a href="#selo"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">SELO</a>
+
+        <!-- Eventos Mobile -->
+        <div class="py-2">
+          <button
+            class="w-full flex items-center justify-between py-3 px-3 text-gray-700 hover:text-ibra-blue transition-colors"
+            onclick="toggleMobileEvents()" id="mobile-events-btn">
+            <span>EVENTOS</span>
+            <svg class="w-5 h-5 transition-transform duration-300" id="mobile-events-icon" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobile-eventos" class="hidden pl-6 space-y-1 mt-2">
+            <a href="seminario-2024.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">VI Seminário 2024</a>
+            <a href="seminario-2023.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">V Seminário 2023</a>
+            <a href="seminario-2022.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">IV Seminário 2022</a>
+            <a href="seminario-2021.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">III Seminário 2021</a>
+            <!-- <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">II Seminário 2020</a> -->
+            <!-- <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">I Seminário 2019</a>
+            <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">Seminário 2018</a> -->
+          </div>
+        </div>
+
+        <a href="#noticias"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Notícias</a>
+        <a href="#contato"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24">
+      <!-- Hero Desktop -->
+      <div class="hidden md:block">
+        <div class="hero-bg max-w-7xl mx-auto aspect-[1900/630]">
+          <div class="hero-content flex items-center px-8 md:px-20">
+            <div class="max-w-3xl animate-fade-in">
+              <h1 class="font-playfair text-white font-bold leading-tight
+                   text-4xl md:text-5xl lg:text-4xl allign-middle">
+                Instituto Brasileiro de <br>Rastreamento de Ativos<br />
+              </h1>
+
+              <div class="mt-6 h-1 w-24 bg-ibra-gold rounded-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hero Mobile -->
+      <div class="block md:hidden px-4">
+        <div class="max-w-md mx-auto bg-gray-200 rounded-2xl shadow-lg overflow-hidden">
+          <img src="assets/images/hero_mobile.jpg" alt="Evento IBRA" class="w-full h-[500px] object-cover" />
+          <div class="p-6 text-center">
+            <!-- <h1 class="font-playfair text-2xl font-bold text-ibra-blue mb-4">
+              VI SEMINÁRIO INTERNACIONAL<br />
+              DE RASTREAMENTO DE ATIVOS
+            </h1> -->
+            <!-- <p class="text-gray-600 mb-4">
+              Em homenagem ao Professor Carlos Fernando Mathias
+            </p> -->
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Session 3 - Sobre o IBRA -->
+    <section id="sobre" class="py-20 bg-ibra-light-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-6">
+              Sobre o IBRA
+            </h2>
+            <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+              O Instituto Brasileiro de Rastreamento de Ativos (IBRA) é uma associação
+              sem fins lucrativos, que tem como objetivo difundir e aprimorar as melhores
+              práticas de rastreamento de ativos no combate a fraude e corrupção, através
+              das ferramentas jurídicas existentes, visando o interesse público e social.
+            </p>
+            <p class="text-gray-600 mb-6 text-lg leading-relaxed">Dessa forma aproximando o poder público da iniciativa
+              privada solucionando
+              questões do dia a dia do Judiciário
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl shadow-xl p-8 flex items-center justify-center">
+            <img src="assets/images/foto_sobre_ibra-u419-fr.png" alt="Ibrativos"
+              class="rounded-lg w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Session 4 - Board -->
+    <section id="sobre" class="py-20 bg-ibra-light-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="bg-white rounded-2xl shadow-xl p-8 flex items-center justify-center">
+            <img src="assets/images/board_final_ibra.png" alt="Imagem placeholder"
+              class="rounded-lg w-full h-full object-cover">
+          </div>
+          <div>
+            <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-6">
+              Board
+            </h2>
+            <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+              CONSELHO<br>
+              ◆ Krikor Kaysserlian (Presidente);<br>
+              ◆ Dr. Eronides Santos (Conselheiro);<br>
+              ◆ Edward H. Davis Jr. (Conselheiro).<br>
+              <br>
+              DIRETORIA<br>
+              ◆ Rodrigo Kaysserlian (Diretor Presidente);<br>
+              ◆ André Rocha (Vice Presidente);<br>
+              ◆ Ana Carolina Remsen (Diretora Financeira);<br>
+              ◆ Renato Capanema (Diretor Institucional – Licenciado);<br>
+              ◆ Afonso H. Alves Braga (Diretor de Projetos).<br>
+              ◆ Stephen Baker (Academic Director)<br>
+              ◆ Frederico A. O. de Rezende (Diretor Acadêmico Adjunto)<br>
+              ◆ Martin Kenney (International Ambassador)<br>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Session 1 - Evento 2025 -->
+    <section id="ultimo-evento" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+          <a href="seminario-2025.html">
+            <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-2">
+              Seminário 2025
+            </h2>
+            <span class="text-sm text-gray-500">(Clique para ver o evento)</span>
+          </a>
+        </div>
+
+        <!-- Grid: vídeo + conteúdo -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+          <!-- Coluna esquerda: YouTube -->
+          <div class="order-1">
+            <div class="relative w-full aspect-video overflow-hidden rounded-lg shadow-lg mb-6">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/Lo-EtsVCkFk"
+                title="Último Evento IBRA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Coluna direita -->
+          <div class="order-2">
+
+            <!-- Galeria de imagens -->
+            <div class="relative mb-6">
+              <div class="gallery-session flex space-x-4 overflow-hidden" data-gallery="2025">
+
+                <img src="assets/images/eventos/2025/002_abertura/003mesaabertura.jpg" alt="Mesa de abertura"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2025/002_abertura/007mesaabertura.jpg" alt="Palestrantes"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2025/002_abertura/011mesaabertura.jpg" alt="Auditório"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2025/002_abertura/013mesaabertura.jpg" alt="Encerramento"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+              </div>
+            </div>
+
+            <!-- Texto -->
+            <div>
+              <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+                Realizado dia 3 de novembro, em Brasília, o VII Seminário Internacional de
+                Rastreamento de Ativos reuniu especialistas para debater avanços no combate
+                a fraude, corrupção e lavagem de dinheiro, fortalecendo práticas e soluções
+                para a recuperação efetiva de ativos.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Patrocinadores -->
+        <div class="mt-16">
+          <h3 class="text-center font-playfair text-2xl font-bold text-ibra-blue mb-8">
+            Apoio Institucional
+          </h3>
+
+          <!-- Container 70% -->
+          <div class="mx-auto w-[70%]">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+
+              <!-- Card -->
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/bermudes.svg" alt="Bermudes" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/abraahao.png" alt="Abraão" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/kaysserlian.png" alt="Kaysserlian"
+                  class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/triunfae.png" alt="Triunfae" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/megaleiloes.png" alt="Megaleilões"
+                  class="max-h-14 object-contain">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+
+    <!-- Session - Evento 2024 -->
+    <section id="seminario-2024" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+          <a href="seminario-2024.html">
+            <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-2">
+              Seminário 2024
+            </h2>
+            <span class="text-sm text-gray-500">(Clique para ver o evento)</span>
+          </a>
+        </div>
+
+        <!-- Grid: vídeo + conteúdo -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+          <!-- Vídeo -->
+          <div class="order-1">
+            <div class="relative w-full aspect-video overflow-hidden rounded-lg shadow-lg mb-6">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/tNBzB2ve57c"
+                title="Seminário IBRA 2024" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="order-2">
+
+            <!-- Galeria -->
+            <div class="relative mb-6">
+              <div class="gallery-session flex space-x-4 overflow-hidden" data-gallery="2024">
+
+                <img src="assets/images/eventos/2024/mesadeabertura/001_seminario_2024_mesadeabertura.jpg"
+                  alt="Mesa de abertura"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2024/mesadeabertura/007_seminario_2024_mesadeabertura.jpg"
+                  alt="Palestrantes"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2024/mesadeabertura/003_seminario_2024_mesadeabertura.jpg"
+                  alt="Auditório"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2024/mesadeabertura/004_seminario_2024_mesadeabertura.jpg" alt="Painel"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2024/mesadeabertura/009_seminario_2024_mesadeabertura.jpg"
+                  alt="Encerramento"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+              </div>
+            </div>
+
+            <!-- Texto -->
+            <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+              Realizado em novembro de 2024, o Seminário Internacional de Rastreamento de Ativos
+              reuniu líderes e especialistas para debater inovações no combate a fraudes,
+              crimes financeiros e lavagem de dinheiro.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Patrocinadores -->
+        <div class="mt-16">
+          <h3 class="text-center font-playfair text-2xl font-bold text-ibra-blue mb-8">
+            Apoio Institucional
+          </h3>
+
+          <div class="mx-auto w-[70%]">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/bermudes.png" alt="Bermudes" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/mks.png" alt="MKS" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/kaysserlian.png" alt="Kaysserlian"
+                  class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/triunfae.png" alt="Triunfae" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/megaleiloes.png" alt="Megaleilões"
+                  class="max-h-14 object-contain">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Session - Evento 2023 -->
+    <section id="seminario-2023" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Título -->
+        <div class="text-center mb-16">
+          <a href="seminario-2023.html">
+            <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-2">
+              Seminário 2023
+            </h2>
+            <span class="text-sm text-gray-500">(Clique para ver o evento)</span>
+          </a>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+
+          <!-- Vídeo -->
+          <div class="order-1">
+            <div class="relative w-full aspect-video overflow-hidden rounded-lg shadow-lg mb-6">
+              <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/UeFFbXTUkjQ"
+                title="Seminário IBRA 2023" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Conteúdo -->
+          <div class="order-2">
+
+            <!-- Galeria -->
+            <div class="relative mb-6">
+              <div class="gallery-session flex space-x-4 overflow-hidden" data-gallery="2023">
+
+                <img src="assets/images/eventos/2023/mesadeabertura/001mesaabertura2023.jpg" alt="Mesa de abertura"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2023/mesadeabertura/003mesaabertura2023.jpg" alt="Palestrantes"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2023/mesadeabertura/012mesaabertura2023.jpg" alt="Auditório"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2023/mesadeabertura/014mesaabertura2023.jpg" alt="Painel"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+                <img src="assets/images/eventos/2023/mesadeabertura/006mesaabertura2023.jpg" alt="Encerramento"
+                  class="gallery-item h-32 sm:h-40 w-48 sm:w-64 rounded-lg shadow-md flex-shrink-0 object-cover cursor-pointer">
+
+              </div>
+            </div>
+
+            <!-- Texto -->
+            <p class="text-gray-600 text-base lg:text-lg leading-relaxed">
+              O Seminário Internacional de Rastreamento de Ativos 2023 reuniu especialistas
+              nacionais e internacionais para fortalecer estratégias de combate à fraude,
+              corrupção e recuperação de ativos.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Patrocinadores -->
+        <div class="mt-16">
+          <h3 class="text-center font-playfair text-2xl font-bold text-ibra-blue mb-8">
+            Apoio Institucional
+          </h3>
+
+          <div class="mx-auto w-[70%]">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/bermudes.png" alt="Bermudes" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/kroll.jpg" alt="Kroll" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/wald.png" alt="Wald" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/kaysserlian.png" alt="Kaysserlian"
+                  class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/harneys.png" alt="Harneys" class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/megaleiloes.png" alt="Megaleilões"
+                  class="max-h-14 object-contain">
+              </div>
+
+              <div class="flex items-center justify-center h-24 bg-white rounded-lg">
+                <img src="assets/images/eventos/sponsors/invistaFidc.jpeg" alt="Invista FIDC"
+                  class="max-h-14 object-contain">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CSS adicional para esconder scrollbar -->
+    <style>
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+
+
+
+    <!-- Session - Eventos Anteriores -->
+    <section id="eventos" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-16">
+          <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-4">
+            Eventos Realizados
+          </h2>
+          <p class="text-xl text-gray-600">
+            Confira nossos seminários anteriores e suas contribuições
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+
+          <!-- Evento IV - 2022 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <div class="relative">
+              <iframe class="youtube-embed" src="https://www.youtube.com/embed/QYpvU15HKqQ"
+                title="IV Seminário Internacional IBRA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                IV Seminário Internacional
+              </h3>
+
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Métodos e procedimentos nacionais e internacionais de rastreamento de ativos
+                e combate à fraude e corrupção.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">2022</span>
+                <a href="seminario-2022.html">
+                  <button class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">
+                    Ver Detalhes →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Evento III - 2021 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <div class="relative">
+              <iframe class="youtube-embed" src="https://www.youtube.com/embed/UeFFbXTUkjQ"
+                title="III Seminário Internacional IBRA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                III Seminário Internacional
+              </h3>
+
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Debates sobre legislações, cooperação internacional e mecanismos
+                investigativos aplicados ao rastreamento de ativos ilícitos.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">2021</span>
+                <a href="seminario-2021.html">
+                  <button class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">
+                    Ver Detalhes →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Evento II - 2020 -->
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <div class="relative">
+              <iframe class="youtube-embed" src="https://www.youtube.com/embed/tNBzB2ve57c"
+                title="II Seminário Internacional IBRA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <div class="p-6">
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                II Seminário Internacional
+              </h3>
+
+              <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                Discussões iniciais sobre rastreamento de ativos, recuperação patrimonial
+                e enfrentamento à criminalidade financeira.
+              </p>
+
+              <div class="flex items-center justify-between">
+                <span class="text-sm text-gray-500">2020</span>
+                <a href="seminario-2020.html">
+                  <button class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">
+                    Ver Detalhes →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- Session 4 - Selo IBRA -->
+    <section id="selo" class="py-20 bg-ibra-light-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+          <!-- Coluna Esquerda -->
+          <div class="text-center lg:text-left">
+            <img src="assets/images/selo-integridade.png" alt="Selo Portal da Integridade"
+              class="mx-auto lg:mx-22 mb-6 max-w-xs">
+
+            <div class="flex flex-col sm:flex-row lg:flex-col gap-4 justify-center lg:justify-start">
+              <a href="https://www.youtube.com/watch?v=Q_-EoYADleE"
+                class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2">
+                <span>▶</span> Vídeo
+              </a>
+              <a href="assets/arquivos/apresentacao_selo_integridade.pdf"
+                class="bg-ibra-blue hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2">
+                📑 Apresentação
+              </a>
+              <a href="#contato"
+                class="bg-ibra-light-blue hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold flex items-center justify-center gap-2">
+                📝 Formulário
+              </a>
+            </div>
+          </div>
+
+          <!-- Coluna Direita -->
+          <div>
+            <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-2">
+              Conheça o novo selo do IBRA
+            </h2>
+            <p class="text-lg text-gray-600 mb-8">
+              Uma conquista para a transparência do legislativo!
+            </p>
+
+            <div class="grid sm:grid-cols-3 gap-6">
+              <!-- Personalidade 1 -->
+              <div class="text-center">
+                <img src="assets/images/vinicius-poit.jpeg" alt="Deputado Vinicius Poit"
+                  class="rounded-lg shadow-md mb-3">
+                <p class="font-semibold text-sm">Deputado Federal<br>Vinicius Poit</p>
+              </div>
+
+              <!-- Personalidade 2 -->
+              <div class="text-center">
+                <img src="assets/images/gilson-marques.jpeg" alt="Deputado Gilson Marques"
+                  class="rounded-lg shadow-md mb-3">
+                <p class="font-semibold text-sm">Deputado Federal<br>Gilson Marques</p>
+              </div>
+
+              <!-- Personalidade 3 -->
+              <div class="text-center">
+                <img src="assets/images/alessandro-vieira.jpeg" alt="Deputado Alessandro Vieira"
+                  class="rounded-lg shadow-md mb-3">
+                <p class="font-semibold text-sm">Deputado Federal<br>Alessandro Vieira</p>
+              </div>
+
+              <!-- Personalidade 4 -->
+              <div class="text-center">
+                <img src="assets/images/PAULO.jpg" alt="Deputado Paulo Ganine" class="rounded-lg shadow-md mb-3">
+                <p class="font-semibold text-sm">Deputado Federal<br>Paulo Ganine</p>
+              </div>
+
+              <!-- Personalidade 5 -->
+              <div class="text-center">
+                <img src="assets/images/deputada-2.jpg" alt="Deputada Adriana Ventura"
+                  class="rounded-lg shadow-md mb-3">
+                <p class="font-semibold text-sm">Deputada Federal<br>Adriana Ventura</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Session 6 - Notícias -->
+    <section id="noticias" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-4">
+            Notícias e Artigos
+          </h2>
+          <p class="text-xl text-gray-600">
+            Acompanhe as últimas novidades do setor
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Notícia 1 (NOVA) -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <!-- Imagem no topo -->
+            <img src="assets/images/news/img_newsIbra.jpg" alt="VII Seminário Internacional de Rastreamento de Ativos"
+              class="w-full h-48 object-cover">
+
+            <!-- Conteúdo -->
+            <div class="p-6">
+              <div class="text-sm text-ibra-gold font-semibold mb-2">
+                EVENTOS
+              </div>
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                VII Seminário Internacional de Rastreamento de Ativos
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                O VII Seminário Internacional de Rastreamento de Ativos está com inscrições abertas. O evento acontece
+                em 3 de novembro, no Auditório do CNMP, em Brasília
+
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">22 de outubro</span>
+                <a href="noticia.html" class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">Ler Mais →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Notícia 2 (era a antiga Notícia 1) -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <!-- Imagem no topo -->
+            <img src="assets/images/news/news001_seminario.jpeg"
+              alt="V Seminário Internacional de Rastreamento de Ativos" class="w-full h-48 object-cover">
+
+            <!-- Conteúdo -->
+            <div class="p-6">
+              <div class="text-sm text-ibra-gold font-semibold mb-2">
+                EVENTOS
+              </div>
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                V Seminário Internacional de Rastreamento de Ativos
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                A organização do V Seminário Internacional de Rastreamento de Ativos está em curso. Na sexta (29) foi
+                realizada uma reunião de ajustes.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">02 de outubro, 2022</span>
+                <!-- <a href="#" class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">Ler Mais →</a> -->
+              </div>
+            </div>
+          </article>
+
+          <!-- Notícia 3 (era a antiga Notícia 2) -->
+          <article class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale">
+            <!-- Imagem no topo -->
+            <img src="assets/images/news/news002_vetopresidencial.jpg" alt="Veto Presidencial de 2022 Mantido"
+              class="w-full h-48 object-cover">
+
+            <!-- Conteúdo -->
+            <div class="p-6">
+              <div class="text-sm text-ibra-gold font-semibold mb-2">
+                CONGRESSO
+              </div>
+              <h3 class="font-playfair text-xl font-bold text-ibra-blue mb-3">
+                Veto Presidencial de 2022 Mantido
+              </h3>
+              <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                O Congresso mantém o Veto Presidencial de 2022 sobre o PL que iria obstar o trabalho de combate ao crime
+                aquisitivo. Uma importante conquista.
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-xs text-gray-500">02 de outubro, 2022</span>
+                <!-- <a href="#" class="text-ibra-blue hover:text-blue-800 font-semibold text-sm">Ler Mais →</a> -->
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- <div class="text-center mt-12">
+      <button class="bg-ibra-blue hover:bg-blue-800 text-white px-8 py-3 rounded-lg font-semibold transition-all">
+        Ver Todas as Notícias
+      </button>
+    </div> -->
+      </div>
+    </section>
+
+    <!-- Session 7 - Localização / Contato -->
+    <section id="contato" class="py-20 bg-ibra-light-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="font-playfair text-4xl font-bold text-ibra-blue mb-4">
+            Contato e Localização
+          </h2>
+          <p class="text-xl text-gray-600">Entre em contato conosco</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Informações de Contato -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="font-playfair text-2xl font-bold text-ibra-blue mb-8">
+              Fale Conosco
+            </h3>
+
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-ibra-blue rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-white text-lg">📍</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-ibra-blue mb-1">Endereço</h4>
+                  <p class="text-gray-600">
+                    Rua 11 de Agosto, n° 53 3° Andar, Cj. 41 <br />
+                    01018-010, São Paulo - SP
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-ibra-blue rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-white text-lg">✉️</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-ibra-blue mb-1">E-mail</h4>
+                  <p class="text-gray-600">
+                    contato@ibrativos.com.br
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-ibra-blue rounded-lg flex items-center justify-center mr-4">
+                  <span class="text-white text-lg">🕒</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-ibra-blue mb-1">
+                    Horário de Atendimento
+                  </h4>
+                  <p class="text-gray-600">
+                    Segunda a Sexta: 9h às 18h
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div>
+              <h4 class="font-semibold text-ibra-blue mb-4">Redes Sociais</h4>
+              <div class="flex space-x-4">
+                <a href="https://br.linkedin.com/company/ibrativos" target="_blank"
+                  class="w-10 h-10 bg-ibra-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-800 transition-all">
+                  <span class="text-sm">in</span>
+                </a>
+                <a href="https://www.youtube.com/channel/UCQVOWFZD2pfCeHMckYUzXyQ" target="_blank"
+                  class="w-10 h-10 bg-ibra-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-800 transition-all">
+                  <span class="text-sm">yt</span>
+                </a>
+                <a href="https://www.instagram.com/ibrativos_rastreamento/" target="_blank"
+                  class="w-10 h-10 bg-ibra-blue rounded-lg flex items-center justify-center text-white hover:bg-blue-800 transition-all">
+                  <span class="text-sm">ig</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulário de Contato -->
+          <div class="bg-white rounded-xl shadow-lg p-8">
+            <h3 class="font-playfair text-2xl font-bold text-ibra-blue mb-8">
+              Envie uma Mensagem
+            </h3>
+
+            <form class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Nome</label>
+                  <input type="text"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-ibra-blue focus:border-transparent"
+                    placeholder="Seu nome completo" />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">E-mail</label>
+                  <input type="email"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-ibra-blue focus:border-transparent"
+                    placeholder="seu@email.com" />
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Telefone</label>
+                  <input type="tel"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-ibra-blue focus:border-transparent"
+                    placeholder="(11) 99999-9999" />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-2">Assunto</label>
+                  <select
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-ibra-blue focus:border-transparent">
+                    <option>Informações sobre eventos</option>
+                    <option>Certificação IBRA</option>
+                    <option>Parcerias</option>
+                    <option>Outros</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-semibold text-gray-700 mb-2">Mensagem</label>
+                <textarea rows="5"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:ring-2 focus:ring-ibra-blue focus:border-transparent"
+                  placeholder="Digite sua mensagem..."></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full bg-ibra-blue hover:bg-blue-800 text-white py-3 rounded-lg font-semibold transition-all">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mt-12">
+          <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 -->
+            <iframe class="absolute top-0 left-0 w-full h-full rounded-xl"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.920613965308!2d-46.63821162488084!3d-23.57383077878706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59adc8a79d5d%3A0x34a2e5b86d5a3d8f!2sR.%2011%20de%20Agosto%2C%2053%20-%203%C2%BA%20andar%20-%20Conj.%2041%2C%20S%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001018-010!5e0!3m2!1spt-BR!2sbr!4v1726684800000!5m2!1spt-BR!2sbr"
+              style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER PADRONIZADO -->
+    <footer class="bg-ibra-gray text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-4 gap-8">
+          <!-- Logo e Descrição -->
+          <div class="lg:col-span-2">
+            <div class="flex flex-col items-start mb-6">
+              <img src="assets/logos/logo_branco_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento"
+                class="h-16 w-auto mb-4">
+              <p class="text-gray-300 leading-relaxed">
+                Instituto Brasileiro de Rastreamento de Ativos
+              </p>
+            </div>
+            <div class="flex space-x-4">
+              <a href="https://br.linkedin.com/company/ibrativos" target="_blank"
+                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ibrativos_rastreamento/" target="_blank"
+                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9zm4.5 3.5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2A3 3 0 1 0 12 16a3 3 0 0 0 0-6zm5.25-2.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0z" />
+                </svg>
+              </a>
+
+              <a href="https://www.youtube.com/channel/UCQVOWFZD2pfCeHMckYUzXyQ" target="_blank"
+                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links Rápidos -->
+          <div>
+            <h3 class="font-semibold text-white mb-6">Links Rápidos</h3>
+            <ul class="space-y-3">
+              <li><a href="#sobre" class="text-gray-300 hover:text-white transition-colors">Sobre o IBRA</a></li>
+              <li><a href="#eventos" class="text-gray-300 hover:text-white transition-colors">Eventos</a></li>
+              <li><a href="#selo" class="text-gray-300 hover:text-white transition-colors">Selo IBRA</a></li>
+              <li><a href="#board" class="text-gray-300 hover:text-white transition-colors">Board</a></li>
+              <li><a href="#noticias" class="text-gray-300 hover:text-white transition-colors">Notícias</a></li>
+              <li><a href="#contato" class="text-gray-300 hover:text-white transition-colors">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Contato -->
+          <div>
+            <h3 class="font-semibold text-white mb-6">Contato</h3>
+            <div class="space-y-3">
+              <p class="text-gray-300 text-sm">
+                <span class="block font-medium text-white mb-1">E-mail:</span>
+                <a href="mailto:contato@ibrativos.com.br" class="hover:text-white transition-colors">
+                  contato@ibrativos.com.br
+                </a>
+              </p>
+              <!-- <p class="text-gray-300 text-sm">
+                <span class="block font-medium text-white mb-1">Telefone:</span>
+                (11) 3456-7890
+              </p> -->
+              <p class="text-gray-300 text-sm">
+                <span class="block font-medium text-white mb-1">Endereço:</span>
+                Rua 11 de Agosto, n° 53 3° Andar, Cj. 41 <br />
+                01018-010, São Paulo - SP
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha Separadora -->
+        <div class="section-divider my-8"></div>
+
+        <!-- Copyright -->
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-300 text-sm">
+            © 2025 IBRA - Instituto Brasileiro de Rastreamento de Ativos. Todos os direitos reservados.
+          </p>
+          <div class="flex space-x-6 mt-4 md:mt-0">
+            <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+            <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Termos de Uso</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript para funcionalidades -->
+    <script>
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn')
+      const mobileMenu = document.getElementById('mobile-menu')
+      const line1 = document.getElementById('line1')
+      const line2 = document.getElementById('line2')
+      const line3 = document.getElementById('line3')
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden')
+
+          // Animate hamburger to X
+          if (mobileMenu.classList.contains('hidden')) {
+            line1.style.transform = 'rotate(0deg) translateY(0px)'
+            line2.style.opacity = '1'
+            line3.style.transform = 'rotate(0deg) translateY(0px)'
+          } else {
+            line1.style.transform = 'rotate(45deg) translateY(8px)'
+            line2.style.opacity = '0'
+            line3.style.transform = 'rotate(-45deg) translateY(-8px)'
+          }
+        })
+      }
+
+      // Mobile Events Toggle
+      function toggleMobileEvents() {
+        const mobileEventos = document.getElementById('mobile-eventos')
+        const mobileEventsIcon = document.getElementById('mobile-events-icon')
+
+        if (mobileEventos && mobileEventsIcon) {
+          mobileEventos.classList.toggle('hidden')
+          mobileEventsIcon.style.transform = mobileEventos.classList.contains('hidden')
+            ? 'rotate(0deg)'
+            : 'rotate(180deg)'
+        }
+      }
+
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          const target = document.querySelector(this.getAttribute('href'))
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            })
+          }
+        })
+      })
+
+      // Header scroll effect
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header')
+        if (window.scrollY > 100) {
+          header.classList.add('shadow-xl')
+        } else {
+          header.classList.remove('shadow-xl')
+        }
+      })
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px',
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in')
+          }
+        })
+      }, observerOptions)
+
+      // Observe all sections
+      document.querySelectorAll('section').forEach((section) => {
+        observer.observe(section)
+      })
+    </script>
+
+    <!-- Script slider -->
+    <script>
+      const slider = document.getElementById('slider');
+      const prev = document.getElementById('prev');
+      const next = document.getElementById('next');
+
+      // Adjust slideWidth based on the actual width of your images and their margins
+      // For example, if images are 192px wide and have a 16px margin: 192 + 16 = 208
+      // Or if using Tailwind's w-48 (192px) and space-x-4 (16px): 192 + 16 = 208
+      // Let's assume a value that fits the example images and spacing.
+      // You might need to inspect the element to get the exact computed width.
+      const slideWidth = 280; // Example value, adjust as needed
+
+      if (next && prev && slider) {
+        next.addEventListener('click', () => {
+          slider.scrollBy({ left: slideWidth, behavior: 'smooth' });
+        });
+
+        prev.addEventListener('click', () => {
+          slider.scrollBy({ left: -slideWidth, behavior: 'smooth' });
+        });
+      }
+
+      // Sponsors slider logic
+      const sponsorsSlider = document.getElementById('sponsors-slider');
+      const sponsorsPrev = document.getElementById('sponsors-prev');
+      const sponsorsNext = document.getElementById('sponsors-next');
+
+      // Estimate slide width for sponsors, adjust as needed
+      // Based on h-12 (48px) or h-16 (64px) and space-x-8 (32px) or space-x-12 (48px)
+      // Let's assume a value that fits the example images and spacing.
+      const sponsorSlideWidth = 160; // Example value, adjust as needed
+
+      if (sponsorsNext && sponsorsPrev && sponsorsSlider) {
+        sponsorsNext.addEventListener('click', () => {
+          sponsorsSlider.scrollBy({ left: sponsorSlideWidth, behavior: 'smooth' });
+        });
+
+        sponsorsPrev.addEventListener('click', () => {
+          sponsorsSlider.scrollBy({ left: -sponsorSlideWidth, behavior: 'smooth' });
+        });
+      }
+    </script>
+
+
+    <!-- =========================
+  MODAL UNIVERSAL – GALERIA
+========================= -->
+    <div id="imageModal" class="fixed inset-0 bg-black/80 hidden items-center justify-center z-50">
+
+      <!-- Botão fechar -->
+      <button id="closeModal" class="absolute top-6 right-6 text-white text-4xl font-bold hover:opacity-70">
+        ×
+      </button>
+
+      <!-- Botão anterior -->
+      <button id="modalPrev" class="absolute left-6 text-white text-5xl hover:opacity-70">
+        ‹
+      </button>
+
+      <!-- Imagem -->
+      <img id="modalImage" class="max-w-[90vw] max-h-[90vh] rounded-lg shadow-2xl object-contain">
+
+      <!-- Botão próximo -->
+      <button id="modalNext" class="absolute right-6 text-white text-5xl hover:opacity-70">
+        ›
+      </button>
+    </div>
+    <script>
+      const modal = document.getElementById('imageModal');
+      const modalImg = document.getElementById('modalImage');
+      const closeBtn = document.getElementById('closeModal');
+      const prevBtn = document.getElementById('modalPrev');
+      const nextBtn = document.getElementById('modalNext');
+
+      let currentImages = [];
+      let currentIndex = 0;
+
+      function openModal(images, index) {
+        currentImages = images;
+        currentIndex = index;
+        modalImg.src = currentImages[currentIndex];
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      function showPrev() {
+        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
+        modalImg.src = currentImages[currentIndex];
+      }
+
+      function showNext() {
+        currentIndex = (currentIndex + 1) % currentImages.length;
+        modalImg.src = currentImages[currentIndex];
+      }
+
+      document.querySelectorAll('.gallery-session').forEach(session => {
+        const images = Array.from(
+          session.querySelectorAll('.gallery-item')
+        ).map(img => img.src);
+
+        session.querySelectorAll('.gallery-item').forEach((img, index) => {
+          img.addEventListener('click', () => openModal(images, index));
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      prevBtn.addEventListener('click', showPrev);
+      nextBtn.addEventListener('click', showNext);
+
+      document.addEventListener('keydown', (e) => {
+        if (modal.classList.contains('hidden')) return;
+        if (e.key === 'Escape') closeModal();
+        if (e.key === 'ArrowLeft') showPrev();
+        if (e.key === 'ArrowRight') showNext();
+      });
+
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    </script>
+
+
+</body>
+
+</html>

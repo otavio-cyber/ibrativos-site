@@ -1,0 +1,91 @@
+/* Estilos CSS padronizados para o site IBRA */
+
+/* Animações personalizadas */
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Linha separadora com gradiente */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, #4b5563, transparent);
+}
+
+/* Hero background personalizado */
+.hero-bg {
+  position: relative;
+  background: url("../assets/images/background_hero_seminario.jpg") no-repeat center top;
+  background-size: cover;
+  background-color: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Melhorias de acessibilidade */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Transições suaves para todos os elementos interativos */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Melhorias para foco de teclado */
+a:focus,
+button:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Responsividade aprimorada */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 1rem;
+  }
+
+  .hero-bg {
+    border-radius: 0.5rem;
+  }
+}
+
+/* Melhorias para impressão */
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+
+  .no-print {
+    display: none;
+  }
+}

@@ -1,0 +1,113 @@
+.
+├── encerramento
+│   ├── 001_encerramento_2021.jpg
+│   ├── 002_encerramento_2021.jpg
+│   └── 003_encerramento_2021.jpg
+├── mesadeabertura
+│   ├── 001_mesadeabertura_2021.jpg
+│   ├── 002_mesadeabertura_2021.jpg
+│   ├── 003_mesadeabertura_2021.jpg
+│   ├── 004_mesadeabertura_2021.jpg
+│   ├── 005_mesadeabertura_2021.jpg
+│   ├── 006_mesadeabertura_2021.jpg
+│   ├── 007_mesadeabertura_2021.jpg
+│   ├── 008_mesadeabertura_2021.jpg
+│   ├── 009_mesadeabertura_2021.jpg
+│   ├── 010_mesadeabertura_2021.jpg
+│   ├── 011_mesadeabertura_2021.jpg
+│   ├── 012_mesadeabertura_2021.jpg
+│   ├── 013_mesadeabertura_2021.jpg
+│   ├── 014_mesadeabertura_2021.jpg
+│   ├── 015_mesadeabertura_2021.jpg
+│   ├── 016_mesadeabertura_2021.jpg
+│   ├── 017_mesadeabertura_2021.jpg
+│   ├── 018_mesadeabertura_2021.jpg
+│   ├── 019_mesadeabertura_2021.jpg
+│   ├── 020_mesadeabertura_2021.jpg
+│   ├── 021_mesadeabertura_2021.jpg
+│   ├── 022_mesadeabertura_2021.jpg
+│   ├── 023_mesadeabertura_2021.jpg
+│   ├── 024_mesadeabertura_2021.jpg
+│   ├── 025_mesadeabertura_2021.jpg
+│   ├── 026_mesadeabertura_2021.jpg
+│   ├── 027_mesadeabertura_2021.jpg
+│   ├── 028_mesadeabertura_2021.jpg
+│   ├── 029_mesadeabertura_2021.jpg
+│   ├── 030_mesadeabertura_2021.jpg
+│   ├── 031_mesadeabertura_2021.jpg
+│   ├── 032_mesadeabertura_2021.jpg
+│   ├── 033_mesadeabertura_2021.jpg
+│   └── 034_mesadeabertura_2021.jpg
+├── painel1
+│   ├── 001_painel1_2021.jpg
+│   ├── 002_painel1_2021.jpg
+│   ├── 003_painel1_2021.jpg
+│   ├── 004_painel1_2021.jpg
+│   ├── 005_painel1_2021.jpg
+│   ├── 006_painel1_2021.jpg
+│   ├── 007_painel1_2021.jpg
+│   ├── 008_painel1_2021.jpg
+│   ├── 009_painel1_2021.jpg
+│   ├── 010_painel1_2021.jpg
+│   └── 011_painel1_2021.jpg
+├── painel2
+│   ├── 001_painel2_2021.jpg
+│   ├── 002_painel2_2021.jpg
+│   ├── 003_painel2_2021.jpg
+│   ├── 004_painel2_2021.jpg
+│   ├── 005_painel2_2021.jpg
+│   ├── 006_painel2_2021.jpg
+│   ├── 007_painel2_2021.jpg
+│   ├── 008_painel2_2021.jpg
+│   ├── 009_painel2_2021.jpg
+│   └── 010_painel2_2021.jpg
+├── painel3
+│   ├── 001_painel3_2021.jpg
+│   ├── 002_painel3_2021.jpg
+│   ├── 003_painel3_2021.jpg
+│   ├── 004_painel3_2021.jpg
+│   ├── 005_painel3_2021.jpg
+│   ├── 006_painel3_2021.jpg
+│   ├── 007_painel3_2021.jpg
+│   ├── 008_painel3_2021.jpg
+│   ├── 009_painel3_2021.jpg
+│   ├── 010_painel3_2021.jpg
+│   ├── 011_painel3_2021.jpg
+│   ├── 012_painel3_2021.jpg
+│   └── 013_painel3_2021.jpg
+├── painel4
+│   ├── 001_painel4_2021.jpg
+│   ├── 002_painel4_2021.jpg
+│   ├── 003_painel4_2021.jpg
+│   ├── 004_painel4_2021.jpg
+│   ├── 005_painel4_2021.jpg
+│   ├── 006_painel4_2021.jpg
+│   ├── 007_painel4_2021.jpg
+│   ├── 008_painel4_2021.jpg
+│   ├── 009_painel4_2021.jpg
+│   ├── 010_painel4_2021.jpg
+│   ├── 011_painel4_2021.jpg
+│   ├── 012_painel4_2021.jpg
+│   ├── 013_painel4_2021.jpg
+│   ├── 014_painel4_2021.jpg
+│   └── 015_painel4_2021.jpg
+├── painel5
+│   ├── 001_painel5_2021.jpg
+│   ├── 002_painel5_2021.jpg
+│   ├── 003_painel5_2021.jpg
+│   ├── 004_painel5_2021.jpg
+│   ├── 005_painel5_2021.jpg
+│   └── 006_painel5_2021.jpg
+├── painel6
+│   ├── 001_painel6_2021.jpg
+│   ├── 002_painel6_2021.jpg
+│   ├── 003_painel6_2021.jpg
+│   ├── 004_painel6_2021.jpg
+│   ├── 005_painel6_2021.jpg
+│   ├── 006_painel6_2021.jpg
+│   ├── 007_painel6_2021.jpg
+│   ├── 008_painel6_2021.jpg
+│   └── 009_painel6_2021.jpg
+└── tree2021.txt
+
+9 directories, 102 files

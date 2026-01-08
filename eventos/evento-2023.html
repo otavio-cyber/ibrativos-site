@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V Seminário Internacional 2023 - IBRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ibra-blue': '#1e3a8a',
+                        'ibra-light-blue': '#3b82f6',
+                        'ibra-gold': '#f59e0b',
+                        'ibra-gray': '#374151',
+                        'ibra-light-gray': '#f8fafc',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-white">
+    <!-- HEADER PADRONIZADO -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="../assets/logos/logo_final_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento" 
+                         class="h-12 md:h-16 max-w-56 object-contain">
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Home</a>
+                    <a href="../index.html#sobre" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">O IBRA</a>
+                    <a href="../index.html#selo" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Selo</a>
+
+                    <!-- Dropdown Eventos -->
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+                            Eventos
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="py-3">
+                                <a href="evento-2024.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">VI Seminário 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2023.html" class="block px-4 py-3 text-white bg-ibra-blue hover:bg-blue-800 transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">V Seminário 2023</div>
+                                    <div class="text-xs text-blue-100 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2022.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">IV Seminário 2022</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">III Seminário 2021</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2020.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">II Seminário 2020</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2019.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">I Seminário 2019</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="evento-2018.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">Seminário 2018</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../index.html#noticias" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Notícias</a>
+                    <a href="../index.html#contato" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Contato</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden flex flex-col space-y-1.5 p-2" id="mobile-menu-btn" aria-label="Menu">
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line1"></div>
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line2"></div>
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line3"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="px-4 py-4 space-y-1">
+                <a href="../index.html" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Home</a>
+                <a href="../index.html#sobre" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">O IBRA</a>
+                <a href="../index.html#selo" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Selo</a>
+                
+                <!-- Eventos Mobile -->
+                <div class="py-2">
+                    <button class="w-full flex items-center justify-between py-3 px-3 text-gray-700 hover:text-ibra-blue transition-colors" 
+                            onclick="toggleMobileEvents()" id="mobile-events-btn">
+                        <span>Eventos</span>
+                        <svg class="w-5 h-5 transition-transform duration-300" id="mobile-events-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="mobile-eventos" class="hidden pl-6 space-y-1 mt-2">
+                        <a href="evento-2024.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">VI Seminário 2024</a>
+                        <a href="evento-2023.html" class="block py-2 text-ibra-blue font-medium text-sm transition-colors">V Seminário 2023</a>
+                        <a href="evento-2022.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">IV Seminário 2022</a>
+                        <a href="evento-2021.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">III Seminário 2021</a>
+                        <a href="evento-2020.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">II Seminário 2020</a>
+                        <a href="evento-2019.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">I Seminário 2019</a>
+                        <a href="evento-2018.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">Seminário 2018</a>
+                    </div>
+                </div>
+                
+                <a href="../index.html#noticias" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Notícias</a>
+                <a href="../index.html#contato" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-ibra-blue to-ibra-light-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <br><br>
+                <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-4">
+                    V Seminário Internacional
+                </h1>
+                <h2 class="font-playfair text-2xl md:text-3xl font-medium mb-6">
+                    Rastreamento de Ativos
+                </h2>
+                <p class="text-xl mb-4">Brasília-DF / NOV-2023</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Principal -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Assista ao Evento Completo
+                </h2>
+                <p class="text-gray-600 text-lg">Reveja na Íntegra o seminário</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/UeFFbXTUkjQ"
+                        title="V Seminário Internacional IBRA 2023" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações do Evento -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-6">
+                        Sobre o Evento
+                    </h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        O V Seminário Internacional de Rastreamento de Ativos aconteceu em novembro de 2023,
+                        reunindo magistrados, autoridades e especialistas de diversos países em Brasília.
+                        O evento focou em debates importantes sobre legislações e mecanismos investigativos
+                        que buscam rastrear, identificar e bloquear ativos decorrentes de crimes aquisitivos.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Os palestrantes compartilharam experiências sobre as melhores práticas internacionais
+                        e disseminaram conhecimento essencial para profissionais da área jurídica no combate
+                        à fraude e corrupção.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold text-ibra-blue mb-6">
+                        Detalhes do Evento
+                    </h3>
+
+                    <div class="bg-ibra-light-gray rounded-lg p-6 mb-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Data</p>
+                                <p class="text-gray-700">NOV/2023</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Local</p>
+                                <p class="text-gray-700">Brasília/DF</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Modalidade</p>
+                                <p class="text-gray-700">Presencial</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Edição</p>
+                                <p class="text-gray-700">V Seminário</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-semibold text-ibra-blue mb-3">Principais Temas Abordados:</h4>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>• Legislações e mecanismos investigativos</li>
+                            <li>• Rastreamento e identificação de ativos</li>
+                            <li>• Bloqueio de bens decorrentes de crimes</li>
+                            <li>• Experiências internacionais</li>
+                            <li>• Combate à fraude e corrupção</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens -->
+    <section class="py-16 bg-ibra-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Galeria do Evento
+                </h2>
+                <p class="text-gray-600 text-lg">Momentos marcantes do V Seminário</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <img src="../assets/images/eventos/2023/001seminario_2023.jpg" alt="Seminário 2023 - Foto 1" class="rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="../assets/images/eventos/2023/002seminario_2023.jpg" alt="Seminário 2023 - Foto 2" class="rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="../assets/images/eventos/2023/003seminario_2023.jpg" alt="Seminário 2023 - Foto 3" class="rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                <img src="../assets/images/eventos/2023/004seminario_2023.jpg" alt="Seminário 2023 - Foto 4" class="rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegação entre Eventos -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Layout Desktop: 3 colunas lado a lado -->
+            <div class="hidden lg:flex justify-between items-center">
+                <a href="evento-2022.html"
+                    class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                    Evento Anterior (2022)
+                </a>
+                <a href="../index.html"
+                    class="bg-ibra-light-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                    Voltar ao Início
+                </a>
+                <a href="evento-2024.html"
+                    class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                    Próximo Evento (2024)
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Layout Mobile: Stack vertical -->
+            <div class="lg:hidden space-y-4">
+                <div class="text-center">
+                    <a href="../index.html"
+                        class="inline-block bg-ibra-light-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors w-full max-w-xs">
+                        Voltar ao Início
+                    </a>
+                </div>
+                <div class="flex flex-col space-y-3">
+                    <a href="evento-2022.html"
+                        class="flex items-center justify-center text-ibra-blue hover:text-blue-800 font-medium transition-colors py-2 px-4 rounded-lg border border-gray-200 hover:border-ibra-blue">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                        Evento Anterior (2022)
+                    </a>
+                    <a href="evento-2024.html"
+                        class="flex items-center justify-center text-ibra-blue hover:text-blue-800 font-medium transition-colors py-2 px-4 rounded-lg border border-gray-200 hover:border-ibra-blue">
+                        Próximo Evento (2024)
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-ibra-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-playfair text-3xl font-bold text-white mb-4">
+                Interessado em Participar dos Próximos Eventos?
+            </h2>
+            <p class="text-blue-100 text-lg mb-8">
+                Fique por dentro das novidades e seja o primeiro a saber sobre os próximos seminários
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../index.html#contato"
+                    class="bg-ibra-gold hover:bg-yellow-500 text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                    Entre em Contato
+                </a>
+                <a href="../index.html"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                    Voltar ao Início
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER PADRONIZADO -->
+    <footer class="bg-ibra-gray text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Logo e Descrição -->
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col items-start mb-6">
+                        <img src="../assets/logos/logo_branco_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento" 
+                             class="h-16 w-auto mb-4">
+                        <p class="text-gray-300 leading-relaxed">
+                            Referência nacional em capacitação e certificação de profissionais
+                            especializados em rastreamento de ativos e recuperação patrimonial
+                            para o sistema judiciário brasileiro.
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.221.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h3 class="font-semibold text-white mb-6">Links Rápidos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html#sobre" class="text-gray-300 hover:text-white transition-colors">Sobre o IBRA</a></li>
+                        <li><a href="../index.html#eventos" class="text-gray-300 hover:text-white transition-colors">Eventos</a></li>
+                        <li><a href="../index.html#selo" class="text-gray-300 hover:text-white transition-colors">Selo IBRA</a></li>
+                        <li><a href="../index.html#board" class="text-gray-300 hover:text-white transition-colors">Board</a></li>
+                        <li><a href="../index.html#noticias" class="text-gray-300 hover:text-white transition-colors">Notícias</a></li>
+                        <li><a href="../index.html#contato" class="text-gray-300 hover:text-white transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h3 class="font-semibold text-white mb-6">Contato</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 text-sm">
+                            <span class="block font-medium text-white mb-1">E-mail:</span>
+                            <a href="mailto:contato@ibrativos.com.br" class="hover:text-white transition-colors">
+                                contato@ibrativos.com.br
+                            </a>
+                        </p>
+                        <p class="text-gray-300 text-sm">
+                            <span class="block font-medium text-white mb-1">Telefone:</span>
+                            (11) 3456-7890
+                        </p>
+                        <p class="text-gray-300 text-sm">
+                            <span class="block font-medium text-white mb-1">Endereço:</span>
+                            Av. Paulista, 1000 - Sala 1001<br />
+                            São Paulo - SP, CEP: 01310-100
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Linha Separadora -->
+            <div class="border-t border-gray-600 my-8"></div>
+
+            <!-- Copyright -->
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 IBRA - Instituto Brasileiro de Rastreamento de Ativos. Todos os direitos reservados.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Política de Privacidade</a>
+                    <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para funcionalidades -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn')
+        const mobileMenu = document.getElementById('mobile-menu')
+        const line1 = document.getElementById('line1')
+        const line2 = document.getElementById('line2')
+        const line3 = document.getElementById('line3')
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden')
+                
+                // Animate hamburger to X
+                if (mobileMenu.classList.contains('hidden')) {
+                    line1.style.transform = 'rotate(0deg) translateY(0px)'
+                    line2.style.opacity = '1'
+                    line3.style.transform = 'rotate(0deg) translateY(0px)'
+                } else {
+                    line1.style.transform = 'rotate(45deg) translateY(8px)'
+                    line2.style.opacity = '0'
+                    line3.style.transform = 'rotate(-45deg) translateY(-8px)'
+                }
+            })
+        }
+
+        // Mobile Events Toggle
+        function toggleMobileEvents() {
+            const mobileEventos = document.getElementById('mobile-eventos')
+            const mobileEventsIcon = document.getElementById('mobile-events-icon')
+            
+            if (mobileEventos && mobileEventsIcon) {
+                mobileEventos.classList.toggle('hidden')
+                mobileEventsIcon.style.transform = mobileEventos.classList.contains('hidden') 
+                    ? 'rotate(0deg)' 
+                    : 'rotate(180deg)'
+            }
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault()
+                const target = document.querySelector(this.getAttribute('href'))
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    })
+                }
+            })
+        })
+    </script>
+
+</body>
+
+</html>

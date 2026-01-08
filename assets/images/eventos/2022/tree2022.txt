@@ -1,0 +1,130 @@
+.
+├── mesadeabertura
+│   ├── 001_mesadeabertura_2022.jpg
+│   ├── 002_mesadeabertura_2022.jpg
+│   ├── 003_mesadeabertura_2022.jpg
+│   ├── 004_mesadeabertura_2022.jpg
+│   ├── 005_mesadeabertura_2022.jpg
+│   ├── 006_mesadeabertura_2022.jpg
+│   ├── 007_mesadeabertura_2022.jpg
+│   ├── 008_mesadeabertura_2022.jpg
+│   ├── 009_mesadeabertura_2022.jpg
+│   ├── 010_mesadeabertura_2022.jpg
+│   ├── 011_mesadeabertura_2022.jpg
+│   ├── 012_mesadeabertura_2022.jpg
+│   ├── 013_mesadeabertura_2022.jpg
+│   ├── 014_mesadeabertura_2022.jpg
+│   ├── 015_mesadeabertura_2022.jpg
+│   ├── 016_mesadeabertura_2022.jpg
+│   ├── 017_mesadeabertura_2022.jpg
+│   ├── 018_mesadeabertura_2022.jpg
+│   ├── 019_mesadeabertura_2022.jpg
+│   ├── 020_mesadeabertura_2022.jpg
+│   ├── 021_mesadeabertura_2022.jpg
+│   ├── 022_mesadeabertura_2022.jpg
+│   ├── 023_mesadeabertura_2022.jpg
+│   ├── 024_mesadeabertura_2022.jpg
+│   ├── 025_mesadeabertura_2022.jpg
+│   ├── 026_mesadeabertura_2022.jpg
+│   ├── 027_mesadeabertura_2022.jpg
+│   ├── 028_mesadeabertura_2022.jpg
+│   ├── 029_mesadeabertura_2022.jpg
+│   ├── 030_mesadeabertura_2022.jpg
+│   ├── 031_mesadeabertura_2022.jpg
+│   ├── 032_mesadeabertura_2022.jpg
+│   ├── 033_mesadeabertura_2022.jpg
+│   ├── 034_mesadeabertura_2022.jpg
+│   ├── 035_mesadeabertura_2022.jpg
+│   ├── 036_mesadeabertura_2022.jpg
+│   ├── 037_mesadeabertura_2022.jpg
+│   ├── 038_mesadeabertura_2022.jpg
+│   ├── 039_mesadeabertura_2022.jpg
+│   ├── 040_mesadeabertura_2022.jpg
+│   ├── 041_mesadeabertura_2022.jpg
+│   ├── 042_mesadeabertura_2022.jpg
+│   ├── 043_mesadeabertura_2022.jpg
+│   ├── 044_mesadeabertura_2022.jpg
+│   ├── 045_mesadeabertura_2022.jpg
+│   ├── 046_mesadeabertura_2022.jpg
+│   ├── 047_mesadeabertura_2022.jpg
+│   ├── 048_mesadeabertura_2022.jpg
+│   ├── 049_mesadeabertura_2022.jpg
+│   └── 050_mesadeabertura_2022.jpg
+├── painel1
+│   ├── 001_painel1_2022.jpg
+│   ├── 002_painel1_2022.jpg
+│   ├── 003_painel1_2022.jpg
+│   ├── 004_painel1_2022.jpg
+│   ├── 005_painel1_2022.jpg
+│   ├── 006_painel1_2022.jpg
+│   ├── 007_painel1_2022.jpg
+│   └── 008_painel1_2022.jpg
+├── painel2
+│   ├── 001_painel2_2022.jpg
+│   ├── 002_painel2_2022.jpg
+│   ├── 003_painel2_2022.jpg
+│   ├── 004_painel2_2022.jpg
+│   ├── 005_painel2_2022.jpg
+│   ├── 006_painel2_2022.jpg
+│   ├── 007_painel2_2022.jpg
+│   ├── 008_painel2_2022.jpg
+│   ├── 009_painel2_2022.jpg
+│   └── 010_painel2_2022.jpg
+├── painel3
+│   ├── 001_painel3_2022.jpg
+│   ├── 002_painel3_2022.jpg
+│   ├── 003_painel3_2022.jpg
+│   ├── 004_painel3_2022.jpg
+│   ├── 005_painel3_2022.jpg
+│   ├── 006_painel3_2022.jpg
+│   └── 007_painel3_2022.jpg
+├── painel4
+│   ├── 001_painel4_2022.jpg
+│   ├── 002_painel4_2022.jpg
+│   ├── 003_painel4_2022.jpg
+│   ├── 004_painel4_2022.jpg
+│   ├── 005_painel4_2022.jpg
+│   ├── 006_painel4_2022.jpg
+│   └── 007_painel4_2022.jpg
+├── painel5
+│   ├── 001_painel5_2022.jpg
+│   ├── 002_painel5_2022.jpg
+│   ├── 003_painel5_2022.jpg
+│   ├── 004_painel5_2022.jpg
+│   ├── 005_painel5_2022.jpg
+│   ├── 006_painel5_2022.jpg
+│   ├── 007_painel5_2022.jpg
+│   ├── 008_painel5_2022.jpg
+│   ├── 009_painel5_2022.jpg
+│   └── 010_painel5_2022.jpg
+├── painel6
+│   ├── 001_painel6_2022.jpg
+│   ├── 002_painel6_2022.jpg
+│   ├── 003_painel6_2022.jpg
+│   ├── 004_painel6_2022.jpg
+│   ├── 005_painel6_2022.jpg
+│   ├── 006_painel6_2022.jpg
+│   └── 007_painel6_2022.jpg
+├── sunset
+│   ├── 001_sunset_2022.jpg
+│   ├── 002_sunset_2022.jpg
+│   ├── 003_sunset_2022.jpg
+│   ├── 004_sunset_2022.jpg
+│   ├── 005_sunset_2022.jpg
+│   ├── 006_sunset_2022.jpg
+│   ├── 007_sunset_2022.jpg
+│   ├── 008_sunset_2022.jpg
+│   ├── 009_sunset_2022.jpg
+│   ├── 010_sunset_2022.jpg
+│   ├── 011_sunset_2022.jpg
+│   ├── 012_sunset_2022.jpg
+│   ├── 013_sunset_2022.jpg
+│   ├── 014_sunset_2022.jpg
+│   ├── 015_sunset_2022.jpg
+│   ├── 016_sunset_2022.jpg
+│   ├── 017_sunset_2022.jpg
+│   ├── 018_sunset_2022.jpg
+│   └── 019_sunset_2022.jpg
+└── tree2022.txt
+
+9 directories, 119 files

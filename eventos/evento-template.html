@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITULO_EVENTO}} - IBRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ibra-blue': '#1e3a8a',
+                        'ibra-light-blue': '#3b82f6',
+                        'ibra-gold': '#f59e0b',
+                        'ibra-gray': '#374151',
+                        'ibra-light-gray': '#f8fafc',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-white">
+    <!-- 1. HEADER -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div>
+                        <img src="../assets/logos/logo_final_ibra.png" alt="IBRA"
+                            class="h-12 md:h-16 max-w-56 object-contain">
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="../index.html"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Home</a>
+                    <a href="../index.html#sobre"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Selo</a>
+
+                    <!-- Dropdown Eventos -->
+                    <div class="relative group">
+                        <button
+                            class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+                            Eventos
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7-7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div
+                            class="absolute top-full left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                            <div class="py-2">
+                                <a href="evento-2024.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">VI
+                                    Seminário 2024</a>
+                                <a href="evento-2023.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">V
+                                    Seminário 2023</a>
+                                <a href="evento-2022.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">IV
+                                    Seminário 2022</a>
+                                <a href="evento-2021.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">III
+                                    Seminário 2021</a>
+                                <a href="evento-2020.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">II
+                                    Seminário 2020</a>
+                                <a href="evento-2019.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">I
+                                    Seminário 2019</a>
+                                <a href="evento-2018.html"
+                                    class="block px-4 py-2 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue">Seminário
+                                    2018</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../index.html#sobre"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Sobre</a>
+                    <a href="../index.html#noticias"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Notícias</a>
+                    <a href="../index.html#contato"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Contatos</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden flex flex-col space-y-1" id="mobile-menu-btn">
+                    <span class="w-6 h-0.5 bg-gray-700"></span>
+                    <span class="w-6 h-0.5 bg-gray-700"></span>
+                    <span class="w-6 h-0.5 bg-gray-700"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t" id="mobile-menu">
+            <div class="px-4 py-2 space-y-1">
+                <a href="../index.html" class="block py-2 text-gray-700 hover:text-ibra-blue">Home</a>
+                <a href="../index.html#selo" class="block py-2 text-gray-700 hover:text-ibra-blue">Selo</a>
+                <div class="py-2">
+                    <p class="text-gray-500 font-medium text-sm uppercase tracking-wide">Eventos</p>
+                    <a href="evento-2024.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">VI
+                        Seminário 2024</a>
+                    <a href="evento-2023.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">V
+                        Seminário 2023</a>
+                    <a href="evento-2022.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">IV
+                        Seminário 2022</a>
+                    <a href="evento-2021.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">III
+                        Seminário 2021</a>
+                    <a href="evento-2020.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">II
+                        Seminário 2020</a>
+                    <a href="evento-2019.html" class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">I
+                        Seminário 2019</a>
+                    <a href="evento-2018.html"
+                        class="block py-1 pl-4 text-gray-700 hover:text-ibra-blue text-sm">Seminário 2018</a>
+                </div>
+                <a href="../index.html#sobre" class="block py-2 text-gray-700 hover:text-ibra-blue">Sobre</a>
+                <a href="../index.html#noticias" class="block py-2 text-gray-700 hover:text-ibra-blue">Notícias</a>
+                <a href="../index.html#contato" class="block py-2 text-gray-700 hover:text-ibra-blue">Contatos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. HERO SECTION -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-ibra-blue to-ibra-light-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <br><br>
+                <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-4">
+                    {{TITULO_EVENTO}}
+                </h1>
+                <h2 class="font-playfair text-2xl md:text-3xl font-medium mb-6">
+                    Rastreamento de Ativos
+                </h2>
+                <p class="text-xl mb-4">{{LOCAL_DATA}}</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. VÍDEO COMPLETO (LINK YOUTUBE) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Assista ao Evento Completo
+                </h2>
+                <p class="text-gray-600 text-lg">Reveja na íntegra o seminário</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg">
+                    <iframe class="absolute top-0 left-0 w-full h-full"
+                        src="{{YOUTUBE_EMBED_URL}}"
+                        title="{{TITULO_EVENTO}} IBRA" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PAINÉIS SECTION -->
+    <section class="py-16 bg-ibra-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Galeria de Imagens e Composição dos Painéis
+                </h2>
+            </div>
+
+            <!-- 4. MESA DE ABERTURA -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Coluna 1: Slider de fotos com botão YouTube fixo -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-mesa')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Mesa de Abertura</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-mesa')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-mesa" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out" id="slide-container-mesa">
+                                <!-- Imagens do slider serão inseridas aqui -->
+                                {{MESA_ABERTURA_IMAGES}}
+                            </div>
+                        </div>
+                        <!-- Botão YouTube fixo sobre o slider -->
+                        <a href="{{MESA_ABERTURA_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                        <!-- Versão mobile -->
+                        <a href="{{MESA_ABERTURA_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Coluna 2: Composição da mesa -->
+                    <div class="space-y-3">
+                        {{MESA_ABERTURA_PARTICIPANTES}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. PAINEL 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Coluna 1: Slider de fotos com botão YouTube fixo -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel1')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Primeiro Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel1')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel1" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out" id="slide-container-painel1">
+                                {{PAINEL1_IMAGES}}
+                            </div>
+                        </div>
+                        <!-- Botão YouTube fixo sobre o slider -->
+                        <a href="{{PAINEL1_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                        <!-- Versão mobile -->
+                        <a href="{{PAINEL1_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Coluna 2: Composição do painel -->
+                    <div class="space-y-3">
+                        {{PAINEL1_PARTICIPANTES}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. PAINEL 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Coluna 1: Slider de fotos com botão YouTube fixo -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel2')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Segundo Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel2')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel2" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out" id="slide-container-painel2">
+                                {{PAINEL2_IMAGES}}
+                            </div>
+                        </div>
+                        <!-- Botão YouTube fixo sobre o slider -->
+                        <a href="{{PAINEL2_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                        <!-- Versão mobile -->
+                        <a href="{{PAINEL2_YOUTUBE}}" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Coluna 2: Composição do painel -->
+                    <div class="space-y-3">
+                        {{PAINEL2_PARTICIPANTES}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTINUAR COM PAINÉIS 3, 4, 5... ATÉ CHEGAR NO ENCERRAMENTO -->
+            {{PAINEIS_ADICIONAIS}}
+
+            <!-- ENCERRAMENTO (DISCURSO) -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                        Discurso de Encerramento
+                    </h2>
+                    <p class="text-gray-600 text-lg">{{PALESTRANTE_ENCERRAMENTO}}</p>
+                    <p class="text-gray-600 text-lg">{{CARGO_ENCERRAMENTO}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PATROCINADORES (SLIDER COM LOGOS) -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Apoiadores Acadêmicos
+                </h2>
+                <p class="text-gray-600 text-lg">Empresas e instituições que apoiaram o evento</p>
+            </div>
+
+            <!-- Container do slider -->
+            <div class="relative overflow-hidden mx-6 sm:mx-12">
+                <div id="sponsors-slider" class="flex transition-transform duration-500 ease-in-out">
+                    {{SPONSORS_LOGOS}}
+                </div>
+
+                <!-- Botões navegação -->
+                <button id="sponsors-prev"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-ibra-blue bg-opacity-35 text-white p-2 rounded-full shadow-md hover:bg-blue-800 hover:bg-opacity-50 transition-colors z-10">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button id="sponsors-next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-ibra-blue bg-opacity-35 text-white p-2 rounded-full shadow-md hover:bg-blue-800 hover:bg-opacity-50 transition-colors z-10">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="py-16 bg-ibra-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="font-playfair text-3xl font-bold text-white mb-4">
+                Interessado em Participar dos Próximos Eventos?
+            </h2>
+            <p class="text-blue-100 text-lg mb-8">
+                Fique por dentro das novidades e seja o primeiro a saber sobre os próximos seminários
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="../index.html#contato"
+                    class="bg-ibra-gold hover:bg-yellow-500 text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                    Entre em Contato
+                </a>
+                <a href="../index.html"
+                    class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                    Voltar ao Início
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-ibra-gray text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <!-- Logo e Descrição -->
+                <div class="lg:col-span-2">
+                    <div class="flex flex-col items-start">
+                        <img src="../assets/logos/logo_branco_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento"
+                            class="h-16 w-auto mb-4">
+                        <p class="text-sm text-white mb-6 leading-relaxed">
+                            Instituto Brasileiro de<br> Rastreamento de Ativos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div>
+                    <h3 class="font-semibold text-white mb-6">Eventos</h3>
+                    <ul class="space-y-3">
+                        <li><a href="evento-2024.html"
+                                class="text-gray-300 hover:text-white transition-colors">VI Seminário 2024</a></li>
+                        <li><a href="evento-2023.html"
+                                class="text-gray-300 hover:text-white transition-colors">V Seminário 2023</a></li>
+                        <li><a href="evento-2022.html"
+                                class="text-gray-300 hover:text-white transition-colors">IV Seminário 2022</a></li>
+                        <li><a href="evento-2021.html"
+                                class="text-gray-300 hover:text-white transition-colors">III Seminário 2021</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div>
+                    <h3 class="font-semibold text-white mb-6">Contato</h3>
+                    <div class="space-y-3">
+                        <p class="text-gray-300 text-sm">
+                            <span class="block font-medium">E-mail:</span>
+                            <a href="mailto:contato@ibrativos.com.br" class="hover:text-white transition-colors">
+                                contato@ibrativos.com.br
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <p class="text-gray-300 text-sm">
+                    © 2025 IBRA - Instituto Brasileiro de Rastreamento de Ativos. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Slider Functions para os painéis
+        let currentSlides = {
+            'mesa': 0,
+            'painel1': 0,
+            'painel2': 0,
+            'painel3': 0,
+            'painel4': 0,
+            'painel5': 0,
+            'painel6': 0,
+        };
+
+        function nextSlide(sliderId) {
+            const painelName = sliderId.replace('slider-', '');
+            const container = document.getElementById(`slide-container-${painelName}`);
+            if (!container) return;
+            
+            const slides = container.children;
+            const totalSlides = slides.length;
+
+            currentSlides[painelName] = (currentSlides[painelName] + 1) % totalSlides;
+            updateSlider(painelName);
+        }
+
+        function prevSlide(sliderId) {
+            const painelName = sliderId.replace('slider-', '');
+            const container = document.getElementById(`slide-container-${painelName}`);
+            if (!container) return;
+            
+            const slides = container.children;
+            const totalSlides = slides.length;
+
+            currentSlides[painelName] = (currentSlides[painelName] - 1 + totalSlides) % totalSlides;
+            updateSlider(painelName);
+        }
+
+        function updateSlider(painelName) {
+            const container = document.getElementById(`slide-container-${painelName}`);
+            if (!container) return;
+            
+            const translateX = -currentSlides[painelName] * 100;
+            container.style.transform = `translateX(${translateX}%)`;
+        }
+
+        // Slider de Patrocinadores
+        let sponsorsCurrentIndex = 0;
+        const sponsorsSlider = document.getElementById('sponsors-slider');
+        const sponsorsPrev = document.getElementById('sponsors-prev');
+        const sponsorsNext = document.getElementById('sponsors-next');
+        const sponsorsSlideWidth = 224; // 200px + 24px margin
+
+        if (sponsorsNext && sponsorsPrev && sponsorsSlider) {
+            sponsorsNext.addEventListener('click', () => {
+                const maxScroll = sponsorsSlider.scrollWidth - sponsorsSlider.clientWidth;
+                const currentTranslate = sponsorsCurrentIndex * sponsorsSlideWidth;
+
+                if (currentTranslate < maxScroll) {
+                    sponsorsCurrentIndex++;
+                } else {
+                    sponsorsCurrentIndex = 0; // Volta ao início
+                }
+
+                sponsorsSlider.style.transform = `translateX(-${sponsorsCurrentIndex * sponsorsSlideWidth}px)`;
+            });
+
+            sponsorsPrev.addEventListener('click', () => {
+                if (sponsorsCurrentIndex > 0) {
+                    sponsorsCurrentIndex--;
+                } else {
+                    // Vai para o final
+                    const maxIndex = Math.floor((sponsorsSlider.scrollWidth - sponsorsSlider.clientWidth) / sponsorsSlideWidth);
+                    sponsorsCurrentIndex = maxIndex;
+                }
+
+                sponsorsSlider.style.transform = `translateX(-${sponsorsCurrentIndex * sponsorsSlideWidth}px)`;
+            });
+
+            // Auto-slide dos patrocinadores (opcional)
+            setInterval(() => {
+                sponsorsNext.click();
+            }, 4000);
+        }
+    </script>
+</body>
+
+</html>

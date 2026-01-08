@@ -1,0 +1,812 @@
+.
+├── assets
+│   ├── arquivos
+│   │   └── apresentacao_selo_integridade.pdf
+│   ├── images
+│   │   ├── background_hero_seminario.jpg
+│   │   ├── board_final_ibra.png
+│   │   ├── eventos
+│   │   │   ├── 001img-seminario-2024.jpg
+│   │   │   ├── 002img-seminario-2024.jpg
+│   │   │   ├── 003img-seminario-2024.jpg
+│   │   │   ├── 004img-seminario-2024.jpg
+│   │   │   ├── 2021
+│   │   │   │   ├── encerramento
+│   │   │   │   │   ├── 001_encerramento_2021.jpg
+│   │   │   │   │   ├── 002_encerramento_2021.jpg
+│   │   │   │   │   └── 003_encerramento_2021.jpg
+│   │   │   │   ├── mesadeabertura
+│   │   │   │   │   ├── 001_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 002_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 003_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 004_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 005_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 006_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 007_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 008_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 009_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 010_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 011_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 012_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 013_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 014_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 015_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 016_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 017_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 018_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 019_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 020_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 021_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 022_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 023_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 024_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 025_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 026_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 027_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 028_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 029_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 030_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 031_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 032_mesadeabertura_2021.jpg
+│   │   │   │   │   ├── 033_mesadeabertura_2021.jpg
+│   │   │   │   │   └── 034_mesadeabertura_2021.jpg
+│   │   │   │   ├── painel1
+│   │   │   │   │   ├── 001_painel1_2021.jpg
+│   │   │   │   │   ├── 002_painel1_2021.jpg
+│   │   │   │   │   ├── 003_painel1_2021.jpg
+│   │   │   │   │   ├── 004_painel1_2021.jpg
+│   │   │   │   │   ├── 005_painel1_2021.jpg
+│   │   │   │   │   ├── 006_painel1_2021.jpg
+│   │   │   │   │   ├── 007_painel1_2021.jpg
+│   │   │   │   │   ├── 008_painel1_2021.jpg
+│   │   │   │   │   ├── 009_painel1_2021.jpg
+│   │   │   │   │   ├── 010_painel1_2021.jpg
+│   │   │   │   │   └── 011_painel1_2021.jpg
+│   │   │   │   ├── painel2
+│   │   │   │   │   ├── 001_painel2_2021.jpg
+│   │   │   │   │   ├── 002_painel2_2021.jpg
+│   │   │   │   │   ├── 003_painel2_2021.jpg
+│   │   │   │   │   ├── 004_painel2_2021.jpg
+│   │   │   │   │   ├── 005_painel2_2021.jpg
+│   │   │   │   │   ├── 006_painel2_2021.jpg
+│   │   │   │   │   ├── 007_painel2_2021.jpg
+│   │   │   │   │   ├── 008_painel2_2021.jpg
+│   │   │   │   │   ├── 009_painel2_2021.jpg
+│   │   │   │   │   └── 010_painel2_2021.jpg
+│   │   │   │   ├── painel3
+│   │   │   │   │   ├── 001_painel3_2021.jpg
+│   │   │   │   │   ├── 002_painel3_2021.jpg
+│   │   │   │   │   ├── 003_painel3_2021.jpg
+│   │   │   │   │   ├── 004_painel3_2021.jpg
+│   │   │   │   │   ├── 005_painel3_2021.jpg
+│   │   │   │   │   ├── 006_painel3_2021.jpg
+│   │   │   │   │   ├── 007_painel3_2021.jpg
+│   │   │   │   │   ├── 008_painel3_2021.jpg
+│   │   │   │   │   ├── 009_painel3_2021.jpg
+│   │   │   │   │   ├── 010_painel3_2021.jpg
+│   │   │   │   │   ├── 011_painel3_2021.jpg
+│   │   │   │   │   ├── 012_painel3_2021.jpg
+│   │   │   │   │   └── 013_painel3_2021.jpg
+│   │   │   │   ├── painel4
+│   │   │   │   │   ├── 001_painel4_2021.jpg
+│   │   │   │   │   ├── 002_painel4_2021.jpg
+│   │   │   │   │   ├── 003_painel4_2021.jpg
+│   │   │   │   │   ├── 004_painel4_2021.jpg
+│   │   │   │   │   ├── 005_painel4_2021.jpg
+│   │   │   │   │   ├── 006_painel4_2021.jpg
+│   │   │   │   │   ├── 007_painel4_2021.jpg
+│   │   │   │   │   ├── 008_painel4_2021.jpg
+│   │   │   │   │   ├── 009_painel4_2021.jpg
+│   │   │   │   │   ├── 010_painel4_2021.jpg
+│   │   │   │   │   ├── 011_painel4_2021.jpg
+│   │   │   │   │   ├── 012_painel4_2021.jpg
+│   │   │   │   │   ├── 013_painel4_2021.jpg
+│   │   │   │   │   ├── 014_painel4_2021.jpg
+│   │   │   │   │   └── 015_painel4_2021.jpg
+│   │   │   │   ├── painel5
+│   │   │   │   │   ├── 001_painel5_2021.jpg
+│   │   │   │   │   ├── 002_painel5_2021.jpg
+│   │   │   │   │   ├── 003_painel5_2021.jpg
+│   │   │   │   │   ├── 004_painel5_2021.jpg
+│   │   │   │   │   ├── 005_painel5_2021.jpg
+│   │   │   │   │   └── 006_painel5_2021.jpg
+│   │   │   │   ├── painel6
+│   │   │   │   │   ├── 001_painel6_2021.jpg
+│   │   │   │   │   ├── 002_painel6_2021.jpg
+│   │   │   │   │   ├── 003_painel6_2021.jpg
+│   │   │   │   │   ├── 004_painel6_2021.jpg
+│   │   │   │   │   ├── 005_painel6_2021.jpg
+│   │   │   │   │   ├── 006_painel6_2021.jpg
+│   │   │   │   │   ├── 007_painel6_2021.jpg
+│   │   │   │   │   ├── 008_painel6_2021.jpg
+│   │   │   │   │   └── 009_painel6_2021.jpg
+│   │   │   │   └── tree2021.txt
+│   │   │   ├── 2022
+│   │   │   │   ├── mesadeabertura
+│   │   │   │   │   ├── 001_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 002_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 003_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 004_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 005_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 006_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 007_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 008_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 009_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 010_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 011_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 012_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 013_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 014_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 015_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 016_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 017_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 018_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 019_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 020_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 021_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 022_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 023_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 024_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 025_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 026_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 027_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 028_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 029_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 030_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 031_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 032_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 033_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 034_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 035_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 036_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 037_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 038_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 039_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 040_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 041_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 042_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 043_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 044_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 045_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 046_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 047_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 048_mesadeabertura_2022.jpg
+│   │   │   │   │   ├── 049_mesadeabertura_2022.jpg
+│   │   │   │   │   └── 050_mesadeabertura_2022.jpg
+│   │   │   │   ├── painel1
+│   │   │   │   │   ├── 001_painel1_2022.jpg
+│   │   │   │   │   ├── 002_painel1_2022.jpg
+│   │   │   │   │   ├── 003_painel1_2022.jpg
+│   │   │   │   │   ├── 004_painel1_2022.jpg
+│   │   │   │   │   ├── 005_painel1_2022.jpg
+│   │   │   │   │   ├── 006_painel1_2022.jpg
+│   │   │   │   │   ├── 007_painel1_2022.jpg
+│   │   │   │   │   └── 008_painel1_2022.jpg
+│   │   │   │   ├── painel2
+│   │   │   │   │   ├── 001_painel2_2022.jpg
+│   │   │   │   │   ├── 002_painel2_2022.jpg
+│   │   │   │   │   ├── 003_painel2_2022.jpg
+│   │   │   │   │   ├── 004_painel2_2022.jpg
+│   │   │   │   │   ├── 005_painel2_2022.jpg
+│   │   │   │   │   ├── 006_painel2_2022.jpg
+│   │   │   │   │   ├── 007_painel2_2022.jpg
+│   │   │   │   │   ├── 008_painel2_2022.jpg
+│   │   │   │   │   ├── 009_painel2_2022.jpg
+│   │   │   │   │   └── 010_painel2_2022.jpg
+│   │   │   │   ├── painel3
+│   │   │   │   │   ├── 001_painel3_2022.jpg
+│   │   │   │   │   ├── 002_painel3_2022.jpg
+│   │   │   │   │   ├── 003_painel3_2022.jpg
+│   │   │   │   │   ├── 004_painel3_2022.jpg
+│   │   │   │   │   ├── 005_painel3_2022.jpg
+│   │   │   │   │   ├── 006_painel3_2022.jpg
+│   │   │   │   │   └── 007_painel3_2022.jpg
+│   │   │   │   ├── painel4
+│   │   │   │   │   ├── 001_painel4_2022.jpg
+│   │   │   │   │   ├── 002_painel4_2022.jpg
+│   │   │   │   │   ├── 003_painel4_2022.jpg
+│   │   │   │   │   ├── 004_painel4_2022.jpg
+│   │   │   │   │   ├── 005_painel4_2022.jpg
+│   │   │   │   │   ├── 006_painel4_2022.jpg
+│   │   │   │   │   └── 007_painel4_2022.jpg
+│   │   │   │   ├── painel5
+│   │   │   │   │   ├── 001_painel5_2022.jpg
+│   │   │   │   │   ├── 002_painel5_2022.jpg
+│   │   │   │   │   ├── 003_painel5_2022.jpg
+│   │   │   │   │   ├── 004_painel5_2022.jpg
+│   │   │   │   │   ├── 005_painel5_2022.jpg
+│   │   │   │   │   ├── 006_painel5_2022.jpg
+│   │   │   │   │   ├── 007_painel5_2022.jpg
+│   │   │   │   │   ├── 008_painel5_2022.jpg
+│   │   │   │   │   ├── 009_painel5_2022.jpg
+│   │   │   │   │   └── 010_painel5_2022.jpg
+│   │   │   │   ├── painel6
+│   │   │   │   │   ├── 001_painel6_2022.jpg
+│   │   │   │   │   ├── 002_painel6_2022.jpg
+│   │   │   │   │   ├── 003_painel6_2022.jpg
+│   │   │   │   │   ├── 004_painel6_2022.jpg
+│   │   │   │   │   ├── 005_painel6_2022.jpg
+│   │   │   │   │   ├── 006_painel6_2022.jpg
+│   │   │   │   │   └── 007_painel6_2022.jpg
+│   │   │   │   ├── sunset
+│   │   │   │   │   ├── 001_sunset_2022.jpg
+│   │   │   │   │   ├── 002_sunset_2022.jpg
+│   │   │   │   │   ├── 003_sunset_2022.jpg
+│   │   │   │   │   ├── 004_sunset_2022.jpg
+│   │   │   │   │   ├── 005_sunset_2022.jpg
+│   │   │   │   │   ├── 006_sunset_2022.jpg
+│   │   │   │   │   ├── 007_sunset_2022.jpg
+│   │   │   │   │   ├── 008_sunset_2022.jpg
+│   │   │   │   │   ├── 009_sunset_2022.jpg
+│   │   │   │   │   ├── 010_sunset_2022.jpg
+│   │   │   │   │   ├── 011_sunset_2022.jpg
+│   │   │   │   │   ├── 012_sunset_2022.jpg
+│   │   │   │   │   ├── 013_sunset_2022.jpg
+│   │   │   │   │   ├── 014_sunset_2022.jpg
+│   │   │   │   │   ├── 015_sunset_2022.jpg
+│   │   │   │   │   ├── 016_sunset_2022.jpg
+│   │   │   │   │   ├── 017_sunset_2022.jpg
+│   │   │   │   │   ├── 018_sunset_2022.jpg
+│   │   │   │   │   └── 019_sunset_2022.jpg
+│   │   │   │   └── tree2022.txt
+│   │   │   ├── 2023
+│   │   │   │   ├── homenagemministro
+│   │   │   │   │   ├── 9V9C9706.jpg
+│   │   │   │   │   ├── 9V9C9709.jpg
+│   │   │   │   │   ├── 9V9C9749.jpg
+│   │   │   │   │   ├── dsc04120_53313696072_o.jpg
+│   │   │   │   │   ├── dsc04122_53314917854_o.jpg
+│   │   │   │   │   ├── dsc04132_53314563076_o.jpg
+│   │   │   │   │   ├── dsc04170_53313696022_o.jpg
+│   │   │   │   │   ├── dsc04205_53314805278_o.jpg
+│   │   │   │   │   ├── dsc05900_53314562161_o.jpg
+│   │   │   │   │   ├── dsc05907_53313695257_o.jpg
+│   │   │   │   │   ├── dsc06012_53314803423_o.jpg
+│   │   │   │   │   ├── dsc06056_53314803348_o.jpg
+│   │   │   │   │   ├── dsc06057_53314803288_o.jpg
+│   │   │   │   │   ├── dsc06067_53314803268_o.jpg
+│   │   │   │   │   ├── dsc06085_53314803253_o.jpg
+│   │   │   │   │   └── dsc06148_53314915539_o.jpg
+│   │   │   │   ├── kroll.jpg
+│   │   │   │   ├── medarbb.jpg
+│   │   │   │   ├── mesadeabertura
+│   │   │   │   │   ├── 001mesaabertura2023.jpg
+│   │   │   │   │   ├── 002mesaabertura2023.jpg
+│   │   │   │   │   ├── 003mesaabertura2023.jpg
+│   │   │   │   │   ├── 004mesaabertura2023.jpg
+│   │   │   │   │   ├── 005mesaabertura2023.jpg
+│   │   │   │   │   ├── 006mesaabertura2023.jpg
+│   │   │   │   │   ├── 007mesaabertura2023.jpg
+│   │   │   │   │   ├── 008mesaabertura2023.jpg
+│   │   │   │   │   ├── 009mesaabertura2023.jpg
+│   │   │   │   │   ├── 010mesaabertura2023.jpg
+│   │   │   │   │   ├── 011mesaabertura2023.jpg
+│   │   │   │   │   ├── 012mesaabertura2023.jpg
+│   │   │   │   │   ├── 013mesaabertura2023.jpg
+│   │   │   │   │   ├── 014mesaabertura2023.jpg
+│   │   │   │   │   ├── 015mesaabertura2023.jpg
+│   │   │   │   │   ├── 016mesaabertura2023.jpg
+│   │   │   │   │   ├── 017mesaabertura2023.jpg
+│   │   │   │   │   ├── 018mesaabertura2023.jpg
+│   │   │   │   │   ├── 019mesaabertura2023.jpg
+│   │   │   │   │   ├── 020mesaabertura2023.jpg
+│   │   │   │   │   ├── 021mesaabertura2023.jpg
+│   │   │   │   │   ├── 022mesaabertura2023.jpg
+│   │   │   │   │   ├── 023mesaabertura2023.jpg
+│   │   │   │   │   └── 024mesaabertura2023.jpg
+│   │   │   │   ├── mesadeencerramento
+│   │   │   │   │   ├── 001_encerramento_2023.jpg
+│   │   │   │   │   ├── 002_encerramento_2023.jpg
+│   │   │   │   │   └── 003_encerramento_2023.jpg
+│   │   │   │   ├── painel1
+│   │   │   │   │   ├── 001_painel1_2023.jpg
+│   │   │   │   │   ├── 002_painel1_2023.jpg
+│   │   │   │   │   ├── 003_painel1_2023.jpg
+│   │   │   │   │   ├── 004_painel1_2023.jpg
+│   │   │   │   │   ├── 005_painel1_2023.jpg
+│   │   │   │   │   ├── 006_painel1_2023.jpg
+│   │   │   │   │   ├── 007_painel1_2023.jpg
+│   │   │   │   │   ├── 008_painel1_2023.jpg
+│   │   │   │   │   ├── 009_painel1_2023.jpg
+│   │   │   │   │   ├── 010_painel1_2023.jpg
+│   │   │   │   │   ├── 011_painel1_2023.jpg
+│   │   │   │   │   ├── 012_painel1_2023.jpg
+│   │   │   │   │   ├── 013_painel1_2023.jpg
+│   │   │   │   │   ├── 014_painel1_2023.jpg
+│   │   │   │   │   ├── 015_painel1_2023.jpg
+│   │   │   │   │   ├── 016_painel1_2023.jpg
+│   │   │   │   │   ├── 017_painel1_2023.jpg
+│   │   │   │   │   ├── 018_painel1_2023.jpg
+│   │   │   │   │   ├── 019_painel1_2023.jpg
+│   │   │   │   │   ├── 020_painel1_2023.jpg
+│   │   │   │   │   ├── 021_painel1_2023.jpg
+│   │   │   │   │   ├── 022_painel1_2023.jpg
+│   │   │   │   │   ├── 023_painel1_2023.jpg
+│   │   │   │   │   ├── 024_painel1_2023.jpg
+│   │   │   │   │   ├── 025_painel1_2023.jpg
+│   │   │   │   │   ├── 026_painel1_2023.jpg
+│   │   │   │   │   ├── 027_painel1_2023.jpg
+│   │   │   │   │   ├── 028_painel1_2023.jpg
+│   │   │   │   │   ├── 029_painel1_2023.jpg
+│   │   │   │   │   ├── 030_painel1_2023.jpg
+│   │   │   │   │   ├── 031_painel1_2023.jpg
+│   │   │   │   │   ├── 032_painel1_2023.jpg
+│   │   │   │   │   └── 033_painel1_2023.jpg
+│   │   │   │   ├── painel2
+│   │   │   │   │   ├── 001_painel2_2023.jpg
+│   │   │   │   │   ├── 002_painel2_2023.jpg
+│   │   │   │   │   ├── 003_painel2_2023.jpg
+│   │   │   │   │   ├── 004_painel2_2023.jpg
+│   │   │   │   │   ├── 005_painel2_2023.jpg
+│   │   │   │   │   ├── 006_painel2_2023.jpg
+│   │   │   │   │   ├── 007_painel2_2023.jpg
+│   │   │   │   │   ├── 008_painel2_2023.jpg
+│   │   │   │   │   ├── 009_painel2_2023.jpg
+│   │   │   │   │   ├── 010_painel2_2023.jpg
+│   │   │   │   │   ├── 011_painel2_2023.jpg
+│   │   │   │   │   ├── 012_painel2_2023.jpg
+│   │   │   │   │   ├── 013_painel2_2023.jpg
+│   │   │   │   │   ├── 014_painel2_2023.jpg
+│   │   │   │   │   ├── 015_painel2_2023.jpg
+│   │   │   │   │   ├── 016_painel2_2023.jpg
+│   │   │   │   │   ├── 017_painel2_2023.jpg
+│   │   │   │   │   ├── 018_painel2_2023.jpg
+│   │   │   │   │   ├── 019_painel2_2023.jpg
+│   │   │   │   │   ├── 020_painel2_2023.jpg
+│   │   │   │   │   ├── 021_painel2_2023.jpg
+│   │   │   │   │   ├── 022_painel2_2023.jpg
+│   │   │   │   │   ├── 023_painel2_2023.jpg
+│   │   │   │   │   ├── 024_painel2_2023.jpg
+│   │   │   │   │   ├── 025_painel2_2023.jpg
+│   │   │   │   │   ├── 026_painel2_2023.jpg
+│   │   │   │   │   ├── 027_painel2_2023.jpg
+│   │   │   │   │   ├── 028_painel2_2023.jpg
+│   │   │   │   │   ├── 029_painel2_2023.jpg
+│   │   │   │   │   ├── 030_painel2_2023.jpg
+│   │   │   │   │   ├── 031_painel2_2023.jpg
+│   │   │   │   │   └── 032_painel2_2023.jpg
+│   │   │   │   ├── painel3
+│   │   │   │   │   ├── 001_painel3_2023.jpg
+│   │   │   │   │   ├── 002_painel3_2023.jpg
+│   │   │   │   │   ├── 003_painel3_2023.jpg
+│   │   │   │   │   ├── 004_painel3_2023.jpg
+│   │   │   │   │   ├── 005_painel3_2023.jpg
+│   │   │   │   │   ├── 006_painel3_2023.jpg
+│   │   │   │   │   ├── 007_painel3_2023.jpg
+│   │   │   │   │   ├── 008_painel3_2023.jpg
+│   │   │   │   │   ├── 009_painel3_2023.jpg
+│   │   │   │   │   ├── 010_painel3_2023.jpg
+│   │   │   │   │   ├── 011_painel3_2023.jpg
+│   │   │   │   │   ├── 012_painel3_2023.jpg
+│   │   │   │   │   ├── 013_painel3_2023.jpg
+│   │   │   │   │   ├── 014_painel3_2023.jpg
+│   │   │   │   │   ├── 015_painel3_2023.jpg
+│   │   │   │   │   ├── 016_painel3_2023.jpg
+│   │   │   │   │   ├── 017_painel3_2023.jpg
+│   │   │   │   │   ├── 018_painel3_2023.jpg
+│   │   │   │   │   ├── 019_painel3_2023.jpg
+│   │   │   │   │   ├── 020_painel3_2023.jpg
+│   │   │   │   │   ├── 021_painel3_2023.jpg
+│   │   │   │   │   ├── 022_painel3_2023.jpg
+│   │   │   │   │   ├── 023_painel3_2023.jpg
+│   │   │   │   │   ├── 024_painel3_2023.jpg
+│   │   │   │   │   ├── 025_painel3_2023.jpg
+│   │   │   │   │   ├── 026_painel3_2023.jpg
+│   │   │   │   │   ├── 027_painel3_2023.jpg
+│   │   │   │   │   ├── 028_painel3_2023.jpg
+│   │   │   │   │   ├── 029_painel3_2023.jpg
+│   │   │   │   │   ├── 030_painel3_2023.jpg
+│   │   │   │   │   ├── 031_painel3_2023.jpg
+│   │   │   │   │   ├── 032_painel3_2023.jpg
+│   │   │   │   │   ├── 033_painel3_2023.jpg
+│   │   │   │   │   ├── 034_painel3_2023.jpg
+│   │   │   │   │   └── 035_painel3_2023.jpg
+│   │   │   │   ├── painel4
+│   │   │   │   │   ├── 001_painel4_2023.jpg
+│   │   │   │   │   ├── 002_painel4_2023.jpg
+│   │   │   │   │   ├── 003_painel4_2023.jpg
+│   │   │   │   │   ├── 004_painel4_2023.jpg
+│   │   │   │   │   ├── 005_painel4_2023.jpg
+│   │   │   │   │   ├── 006_painel4_2023.jpg
+│   │   │   │   │   ├── 007_painel4_2023.jpg
+│   │   │   │   │   ├── 008_painel4_2023.jpg
+│   │   │   │   │   ├── 009_painel4_2023.jpg
+│   │   │   │   │   ├── 010_painel4_2023.jpg
+│   │   │   │   │   ├── 011_painel4_2023.jpg
+│   │   │   │   │   ├── 012_painel4_2023.jpg
+│   │   │   │   │   ├── 013_painel4_2023.jpg
+│   │   │   │   │   ├── 014_painel4_2023.jpg
+│   │   │   │   │   ├── 015_painel4_2023.jpg
+│   │   │   │   │   ├── 016_painel4_2023.jpg
+│   │   │   │   │   ├── 017_painel4_2023.jpg
+│   │   │   │   │   ├── 018_painel4_2023.jpg
+│   │   │   │   │   ├── 019_painel4_2023.jpg
+│   │   │   │   │   ├── 020_painel4_2023.jpg
+│   │   │   │   │   ├── 021_painel4_2023.jpg
+│   │   │   │   │   └── 022_painel4_2023.jpg
+│   │   │   │   ├── painel5
+│   │   │   │   │   ├── 001_painel5_2023.jpg
+│   │   │   │   │   ├── 002_painel5_2023.jpg
+│   │   │   │   │   ├── 003_painel5_2023.jpg
+│   │   │   │   │   ├── 004_painel5_2023.jpg
+│   │   │   │   │   ├── 005_painel5_2023.jpg
+│   │   │   │   │   ├── 006_painel5_2023.jpg
+│   │   │   │   │   ├── 007_painel5_2023.jpg
+│   │   │   │   │   ├── 008_painel5_2023.jpg
+│   │   │   │   │   ├── 009_painel5_2023.jpg
+│   │   │   │   │   ├── 010_painel5_2023.jpg
+│   │   │   │   │   ├── 011_painel5_2023.jpg
+│   │   │   │   │   ├── 012_painel5_2023.jpg
+│   │   │   │   │   ├── 013_painel5_2023.jpg
+│   │   │   │   │   ├── 014_painel5_2023.jpg
+│   │   │   │   │   ├── 015_painel5_2023.jpg
+│   │   │   │   │   ├── 016_painel5_2023.jpg
+│   │   │   │   │   ├── 017_painel5_2023.jpg
+│   │   │   │   │   ├── 018_painel5_2023.jpg
+│   │   │   │   │   ├── 019_painel5_2023.jpg
+│   │   │   │   │   ├── 020_painel5_2023.jpg
+│   │   │   │   │   ├── 021_painel5_2023.jpg
+│   │   │   │   │   ├── 022_painel5_2023.jpg
+│   │   │   │   │   └── 023_painel5_2023.jpg
+│   │   │   │   ├── tree-evento-2023.txt
+│   │   │   │   └── tree.txt
+│   │   │   ├── 2023_backup
+│   │   │   │   ├── homenagemministro
+│   │   │   │   │   ├── 9V9C9706.jpg
+│   │   │   │   │   ├── 9V9C9709.jpg
+│   │   │   │   │   ├── 9V9C9749.jpg
+│   │   │   │   │   ├── dsc04120_53313696072_o.jpg
+│   │   │   │   │   ├── dsc04122_53314917854_o.jpg
+│   │   │   │   │   ├── dsc04132_53314563076_o.jpg
+│   │   │   │   │   ├── dsc04170_53313696022_o.jpg
+│   │   │   │   │   ├── dsc04205_53314805278_o.jpg
+│   │   │   │   │   ├── dsc05900_53314562161_o.jpg
+│   │   │   │   │   ├── dsc05907_53313695257_o.jpg
+│   │   │   │   │   ├── dsc06012_53314803423_o.jpg
+│   │   │   │   │   ├── dsc06056_53314803348_o.jpg
+│   │   │   │   │   ├── dsc06057_53314803288_o.jpg
+│   │   │   │   │   ├── dsc06067_53314803268_o.jpg
+│   │   │   │   │   ├── dsc06085_53314803253_o.jpg
+│   │   │   │   │   └── dsc06148_53314915539_o.jpg
+│   │   │   │   ├── kroll.jpg
+│   │   │   │   ├── medarbb.jpg
+│   │   │   │   ├── mesadeabertura
+│   │   │   │   │   ├── 001_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 002_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 003_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 004_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 005_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 006_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 007_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 008_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 009_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 010_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 011_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 012_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 013_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── dsc05384_53314049263_o.jpg
+│   │   │   │   │   ├── dsc05389_53314049268_o.jpg
+│   │   │   │   │   ├── dsc05391_53313805236_o.jpg
+│   │   │   │   │   ├── dsc05468_53313805546_o.jpg
+│   │   │   │   │   ├── dsc05477_53314049588_o.jpg
+│   │   │   │   │   ├── dsc3741_53314049148_o.jpg
+│   │   │   │   │   ├── dsc3743_53314049333_o.jpg
+│   │   │   │   │   ├── seminario_ibra-1024x683.jpg
+│   │   │   │   │   ├── seminario_ibra-1536x1024.jpg
+│   │   │   │   │   ├── seminario_ibra-768x512.jpg
+│   │   │   │   │   └── seminario_ibra.jpg
+│   │   │   │   ├── mesadeencerramento
+│   │   │   │   │   ├── dsc04290_53313692767_o.jpg
+│   │   │   │   │   ├── dsc06287_53314801753_o.jpg
+│   │   │   │   │   └── dsc06293_53314801803_o.jpg
+│   │   │   │   ├── painel1
+│   │   │   │   │   ├── 001_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 013_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 014_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── dsc03568_53314280605_o.jpg
+│   │   │   │   │   ├── dsc03594_53314163964_o.jpg
+│   │   │   │   │   ├── dsc03606_53314164099_o.jpg
+│   │   │   │   │   ├── dsc03611_53314281090_o.jpg
+│   │   │   │   │   ├── dsc03617_53312940482_o.jpg
+│   │   │   │   │   ├── dsc03622_53312940587_o.jpg
+│   │   │   │   │   ├── dsc03624_53314281330_o.jpg
+│   │   │   │   │   ├── dsc03629_53313806851_o.jpg
+│   │   │   │   │   ├── dsc03659_53312941012_o.jpg
+│   │   │   │   │   ├── dsc03676_53314051638_o.jpg
+│   │   │   │   │   ├── dsc05509_53314280480_o.jpg
+│   │   │   │   │   ├── dsc05517_53314050118_o.jpg
+│   │   │   │   │   ├── dsc05541_53312939992_o.jpg
+│   │   │   │   │   ├── dsc05567_53314163984_o.jpg
+│   │   │   │   │   ├── dsc05572_53314050573_o.jpg
+│   │   │   │   │   ├── dsc05598_53314159699_o.jpg
+│   │   │   │   │   ├── dsc05607_53314276465_o.jpg
+│   │   │   │   │   ├── dsc05608_53312940582_o.jpg
+│   │   │   │   │   └── dsc05612_53314281240_o.jpg
+│   │   │   │   ├── painel2
+│   │   │   │   │   ├── 001_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel23.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 9V9C9206.jpg
+│   │   │   │   │   ├── 9V9C9220.jpg
+│   │   │   │   │   ├── dsc03684_53314165219_o.jpg
+│   │   │   │   │   ├── dsc03697_53314282140_o.jpg
+│   │   │   │   │   ├── dsc03699_53314282160_o.jpg
+│   │   │   │   │   ├── dsc03706_53314051958_o.jpg
+│   │   │   │   │   ├── dsc03725_53314165564_o.jpg
+│   │   │   │   │   ├── dsc03734_53314052228_o.jpg
+│   │   │   │   │   ├── dsc03756_53314052463_o.jpg
+│   │   │   │   │   ├── dsc03757_53312942337_o.jpg
+│   │   │   │   │   ├── dsc03774_53313808386_o.jpg
+│   │   │   │   │   ├── dsc03812_53314052528_o.jpg
+│   │   │   │   │   ├── dsc03817_53314052933_o.jpg
+│   │   │   │   │   ├── dsc03829_53314166374_o.jpg
+│   │   │   │   │   ├── dsc05644_53314051848_o.jpg
+│   │   │   │   │   ├── dsc05645_53314282355_o.jpg
+│   │   │   │   │   ├── dsc05710_53312936532_o.jpg
+│   │   │   │   │   ├── dsc05720_53314046303_o.jpg
+│   │   │   │   │   ├── dsc05735_53313802266_o.jpg
+│   │   │   │   │   └── dsc05781_53314159724_o.jpg
+│   │   │   │   ├── painel3
+│   │   │   │   │   ├── 001_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 9V9C9478.jpg
+│   │   │   │   │   ├── dsc03848_53314918489_o.jpg
+│   │   │   │   │   ├── dsc03850_53313696742_o.jpg
+│   │   │   │   │   ├── dsc03853_53314563751_o.jpg
+│   │   │   │   │   ├── dsc03858_53314563746_o.jpg
+│   │   │   │   │   ├── dsc03862_53314918409_o.jpg
+│   │   │   │   │   ├── dsc03864_53313696647_o.jpg
+│   │   │   │   │   ├── dsc03868_53314918399_o.jpg
+│   │   │   │   │   ├── dsc03870_53314802008_o.jpg
+│   │   │   │   │   ├── dsc03886_53313696567_o.jpg
+│   │   │   │   │   ├── dsc03940_53314918189_o.jpg
+│   │   │   │   │   ├── dsc03952_53314563471_o.jpg
+│   │   │   │   │   ├── dsc03958_53314563426_o.jpg
+│   │   │   │   │   ├── dsc03977_53314805783_o.jpg
+│   │   │   │   │   ├── dsc05798_53313695722_o.jpg
+│   │   │   │   │   ├── dsc05810_53313695677_o.jpg
+│   │   │   │   │   ├── dsc05815_53313695577_o.jpg
+│   │   │   │   │   ├── dsc05822_53314917329_o.jpg
+│   │   │   │   │   ├── dsc05823_53313692842_o.jpg
+│   │   │   │   │   ├── dsc05834_53314562476_o.jpg
+│   │   │   │   │   ├── dsc05844_53314562391_o.jpg
+│   │   │   │   │   ├── dsc05868_53314562306_o.jpg
+│   │   │   │   │   ├── dsc05886_53314562196_o.jpg
+│   │   │   │   │   └── seminario_rastreamento_de_ativos.jpg
+│   │   │   │   ├── painel4
+│   │   │   │   │   ├── 001_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 013_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── dsc04078_53313692872_o.jpg
+│   │   │   │   │   ├── dsc05918_53314562016_o.jpg
+│   │   │   │   │   ├── dsc05934_53314916764_o.jpg
+│   │   │   │   │   ├── dsc05936_53314561956_o.jpg
+│   │   │   │   │   ├── dsc05941_53314916684_o.jpg
+│   │   │   │   │   ├── dsc05945_53314561821_o.jpg
+│   │   │   │   │   ├── dsc05972_53314803953_o.jpg
+│   │   │   │   │   ├── dsc05990_53313694522_o.jpg
+│   │   │   │   │   └── dsc05997_53313694547_o.jpg
+│   │   │   │   ├── painel5
+│   │   │   │   │   ├── 001_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── dsc04235_53314562771_o.jpg
+│   │   │   │   │   ├── dsc04241_53314805153_o.jpg
+│   │   │   │   │   ├── dsc04251_53314805138_o.jpg
+│   │   │   │   │   ├── dsc06158_53314802943_o.jpg
+│   │   │   │   │   ├── dsc06159_53314560416_o.jpg
+│   │   │   │   │   ├── dsc06163_53314915134_o.jpg
+│   │   │   │   │   ├── dsc06164_53314915114_o.jpg
+│   │   │   │   │   ├── dsc06172_53314559491_o.jpg
+│   │   │   │   │   ├── dsc06201_53314915124_o.jpg
+│   │   │   │   │   ├── dsc06228_53314560006_o.jpg
+│   │   │   │   │   └── dsc06259_53314802268_o.jpg
+│   │   │   │   ├── tree-evento-2023.txt
+│   │   │   │   └── tree.txt
+│   │   │   ├── 2024
+│   │   │   │   ├── encerramento
+│   │   │   │   │   ├── 001seminario_2024_encerramento.jpg
+│   │   │   │   │   ├── 002seminario_2024_encerramento.jpg
+│   │   │   │   │   ├── 003seminario_2024_encerramento.jpg
+│   │   │   │   │   ├── 004seminario_2024_encerramento.jpg
+│   │   │   │   │   └── 005seminario_2024_encerramento.jpg
+│   │   │   │   ├── mesadeabertura
+│   │   │   │   │   ├── 001_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 002_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 003_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 004_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 005_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 006_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 007_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 008_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 009_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 010_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 011_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   ├── 012_seminario_2024_mesadeabertura.jpg
+│   │   │   │   │   └── 013_seminario_2024_mesadeabertura.jpg
+│   │   │   │   ├── painel1
+│   │   │   │   │   ├── 001_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel1.jpg
+│   │   │   │   │   ├── 013_seminario_2024_painel1.jpg
+│   │   │   │   │   └── 014_seminario_2024_painel1.jpg
+│   │   │   │   ├── painel2
+│   │   │   │   │   ├── 001_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel23.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel2.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel2.jpg
+│   │   │   │   │   └── 012_seminario_2024_painel2.jpg
+│   │   │   │   ├── painel3
+│   │   │   │   │   ├── 001_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel3.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel3.jpg
+│   │   │   │   │   └── 011_seminario_2024_painel3.jpg
+│   │   │   │   ├── painel4
+│   │   │   │   │   ├── 001_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel4.jpg
+│   │   │   │   │   ├── 012_seminario_2024_painel4.jpg
+│   │   │   │   │   └── 013_seminario_2024_painel4.jpg
+│   │   │   │   ├── painel5
+│   │   │   │   │   ├── 001_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 010_seminario_2024_painel5.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel5.jpg
+│   │   │   │   │   └── 012_seminario_2024_painel5.jpg
+│   │   │   │   ├── painel6
+│   │   │   │   │   ├── 001_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 002_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 003_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 004_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 005_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 006_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 007_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 008_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 009_seminario_2024_painel6.jpg
+│   │   │   │   │   ├── 011_seminario_2024_painel6.jpg
+│   │   │   │   │   └── 10_seminario_2024_painel6.jpg
+│   │   │   │   └── tree2024
+│   │   │   └── sponsors
+│   │   │       ├── baker.png
+│   │   │       ├── bermudes.png
+│   │   │       ├── bicalho.png
+│   │   │       ├── enforce.png
+│   │   │       ├── exm.png
+│   │   │       ├── harneys.png
+│   │   │       ├── invistaFidc.jpeg
+│   │   │       ├── kaysserlian.png
+│   │   │       ├── kroll.jpg
+│   │   │       ├── madruga.png
+│   │   │       ├── medarbb.jpg
+│   │   │       ├── megaleiloes.png
+│   │   │       ├── mks.png
+│   │   │       ├── mubarak.png
+│   │   │       ├── nogari.png
+│   │   │       ├── triunfae.png
+│   │   │       └── wald.png
+│   │   ├── foto_sobre_ibra-u419-fr.png
+│   │   ├── hero_mobile.jpg
+│   │   ├── news
+│   │   │   ├── news001_seminario.jpeg
+│   │   │   ├── news002_vetopresidencial.jpg
+│   │   │   └── news003_seminarioII.jpeg
+│   │   ├── placeholder_pessoa.jpg
+│   │   ├── selo-integridade.png
+│   │   ├── Xbackground_hero_seminario.jpg
+│   │   ├── Xhero_mobile.png
+│   │   └── XXbackground_hero_seminario.jpg
+│   └── logos
+│       ├── logo_branco_ibra.png
+│       └── logo_final_ibra.png
+├── components
+│   ├── footer.html
+│   └── header.html
+├── css
+│   └── styles.css
+├── eventos
+│   ├── evento-2022.html
+│   ├── evento-2023.html
+│   ├── evento-2024.html
+│   ├── evento-template.html
+│   └── seminario-2024.html
+├── index.html
+├── js
+│   └── common.js
+├── map.csv
+├── package.json
+├── renomear_copy.py
+├── renomear.py
+├── seminario-2021.html
+├── seminario-2022.html
+├── seminario-2023.html
+├── seminario-2024.html
+├── treeIbra.txt
+└── treeRootProject.txt
+
+57 directories, 753 files

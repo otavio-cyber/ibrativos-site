@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IV Seminário Internacional 2022 - IBRA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        playfair: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        'ibra-blue': '#1e3a8a',
+                        'ibra-light-blue': '#3b82f6',
+                        'ibra-gold': '#f59e0b',
+                        'ibra-gray': '#374151',
+                        'ibra-light-gray': '#f8fafc',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-inter bg-white">
+    <!-- HEADER PADRONIZADO -->
+    <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img src="assets/logos/logo_final_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento"
+                        class="h-12 md:h-16 max-w-56 object-contain">
+                </div>
+
+                <!-- Navigation Desktop -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="index.html"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Home</a>
+                    <a href="#sobre" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">O IBRA</a>
+                    <a href="#selo" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Selo</a>
+
+                    <!-- Dropdown Eventos -->
+                    <div class="relative group">
+                        <button
+                            class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+                            Eventos
+                            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <div class="py-3">
+                                <a href="seminario-2024.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">VI Seminário 2024</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2023.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">V Seminário 2023</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2022.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">IV Seminário 2022</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2021.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">III Seminário 2021</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2021.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">II Seminário 2020</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2021.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">I Seminário 2019</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                                <a href="seminario-2021.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                                    <div class="font-medium">Seminário 2018</div>
+                                    <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#noticias"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Notícias</a>
+                    <a href="#contato"
+                        class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Contato</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden flex flex-col space-y-1.5 p-2" id="mobile-menu-btn" aria-label="Menu">
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line1"></div>
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line2"></div>
+                    <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line3"></div>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+            <div class="px-4 py-4 space-y-1">
+                <a href="index.html"
+                    class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Home</a>
+                <a href="#sobre"
+                    class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">O
+                    IBRA</a>
+                <a href="#selo"
+                    class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Selo</a>
+
+                <!-- Eventos Mobile -->
+                <div class="py-2">
+                    <button
+                        class="w-full flex items-center justify-between py-3 px-3 text-gray-700 hover:text-ibra-blue transition-colors"
+                        onclick="toggleMobileEvents()" id="mobile-events-btn">
+                        <span>Eventos</span>
+                        <svg class="w-5 h-5 transition-transform duration-300" id="mobile-events-icon" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="mobile-eventos" class="hidden pl-6 space-y-1 mt-2">
+                        <a href="seminario-2024.html"
+                            class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">VI Seminário
+                            2024</a>
+                        <a href="seminario-2023.html"
+                            class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">V Seminário
+                            2023</a>
+                        <a href="seminario-2022.html"
+                            class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">IV Seminário
+                            2022</a>
+                        <a href="seminario-2021.html"
+                            class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">III
+                            Seminário 2021</a>
+                        <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">II
+                            Seminário 2020</a>
+                        <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">I
+                            Seminário 2019</a>
+                        <a href=""
+                            class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">Seminário
+                            2018</a>
+                    </div>
+                </div>
+
+                <a href="#noticias"
+                    class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Notícias</a>
+                <a href="#contato"
+                    class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-r from-ibra-blue to-ibra-light-blue">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center text-white">
+                <br><br>
+                <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-4">
+                    IV Seminário Internacional
+                </h1>
+                <h2 class="font-playfair text-2xl md:text-3xl font-medium mb-6">
+                    Rastreamento de Ativos
+                </h2>
+                <p class="text-xl mb-4">Brasília-DF / NOV-2023</p>
+                <!-- <p class="text-lg opacity-90">Legislações e mecanismos investigativos para combate à fraude</p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Informações do Evento -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-6">
+                        Sobre o Evento
+                    </h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Aconteceu no dia 21 de novembro de 2022, o IV Seminário Internacional de Rastreamento de Ativos,
+                        com 5 painéis sobre as atualidades da área. Com palestrantes de diversos países, os painéis são
+                        compostos por especialistas, nacionais e internacionais, no combate às fraudes financeiras e
+                        fiscais.
+                        O evento, que foi transmitido online, autoridades do Brasil e agentes de países como a
+                        Inglaterra,
+                        Ilhas Virgens Britânicas, Ilhas Cayman e Ilhas Jersey trocaram informações sobre as melhores
+                        práticas
+                        e disseminaram conhecimento a respeito das legislações e dos mecanismos investigativos que
+                        buscam rastrear,
+                        identificar e bloquear ativos decorrente de crime aquisitivo
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold text-ibra-blue mb-6">
+                        Detalhes do Evento
+                    </h3>
+
+                    <div class="bg-ibra-light-gray rounded-lg p-6 mb-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Data</p>
+                                <p class="text-gray-700">NOV/2022</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Local</p>
+                                <p class="text-gray-700">Brasília/DF</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Modalidade
+                                </p>
+                                <p class="text-gray-700">Presencial</p>
+                            </div>
+                            <div>
+                                <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Edição</p>
+                                <p class="text-gray-700">IV Seminário</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens e Composição dos Painéis -->
+    <section class="py-16 bg-ibra-light-gray">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Galeria de Imagens e Composição dos Painéis
+                </h2>
+            </div>
+
+            <!-- Mesa de Abertura -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel0')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Mesa de Abertura</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel0')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel0" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel0">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/001_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/002_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/003_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/004_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/005_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/006_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/007_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 008 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/008_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 009 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/009_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 010 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/010_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 011 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/011_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 012 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/012_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 013 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/013_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 014 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/014_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 015 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/015_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 016 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/016_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 017 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/017_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 018 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/018_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 019 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/019_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 020 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/020_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 021 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/021_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 022 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/022_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 023 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/023_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 024 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/024_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 025 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/025_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 026 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/026_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 027 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/027_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 028 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/028_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 029 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/029_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 030 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/030_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 031 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/031_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 032 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/032_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 033 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/033_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 034 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/034_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 035 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/035_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 036 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/036_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 037 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/037_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 038 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/038_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 039 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/039_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 040 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/040_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 041 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/041_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 042 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/042_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 043 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/043_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 044 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/044_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 045 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/045_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 046 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/046_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 047 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/047_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 048 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/048_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 049 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/049_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                                <!-- 050 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/mesadeabertura/050_mesadeabertura_2022.jpg"
+                                            alt="V Seminário - Mesa de Abertura"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/wikHlp7ABEw?si=AHr9DxlUGUv1nHr0" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/wikHlp7ABEw?si=YsYNskLMdMumxnT2" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Participantes -->
+                    <div class="relative space-y-3"><br><br>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Daniel Carnio Costa</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Presidente da Unidade Nacional de Capacitação
+                                do Ministério Público</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Ministro Paulo Dias Moura Ribeiro</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Ministro do Superior Tribunal de Justiça</p>
+                        </div>
+                        <div>
+
+                            <h4 class="font-semibold text-ibra-blue mb-1">Rodrigo Kaysserlian</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Diretor Presidente do Ibra</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Krikor Kaysserlian</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Presidente do Conselho do Ibra</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Carlos Vinicius Alves Ribeiro</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Conselheiro Nacional do Ministério Público
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Desembargador Orlando Eduardo Geraldi</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Presidente do Tribunal de Justiça Militar de
+                                São Paulo</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Luis Felipe Salomão Filho</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio na Salomão, Kaiuca, Abrahão,
+                                Raposo e Cotta Advogados (representando a OAB Federal)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">Rodrigo Badaró</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Conselheiro Nacional do Ministério Público
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <script>
+                // Controla os índices de cada slider
+                const sliderIndices = {};
+
+                function showSlide(sliderId, index) {
+                    const container = document.getElementById("slide-container-" + sliderId);
+                    const slides = container.children.length;
+                    if (!sliderIndices[sliderId] && sliderIndices[sliderId] !== 0) {
+                        sliderIndices[sliderId] = 0;
+                    }
+                    sliderIndices[sliderId] = (index + slides) % slides;
+                    container.style.transform = `translateX(-${sliderIndices[sliderId] * 100}%)`;
+                }
+
+                function nextSlide(sliderId) {
+                    showSlide(sliderId, sliderIndices[sliderId] + 1);
+                }
+
+                function prevSlide(sliderId) {
+                    showSlide(sliderId, sliderIndices[sliderId] - 1);
+                }
+
+                // Função para autoplay
+                function startAutoplay(sliderId, interval = 3000) {
+                    const slider = document.getElementById(sliderId);
+                    let autoplay = setInterval(() => nextSlide(sliderId), interval);
+
+                    // Pausar no hover
+                    slider.addEventListener("mouseover", () => clearInterval(autoplay));
+                    slider.addEventListener("mouseleave", () => {
+                        autoplay = setInterval(() => nextSlide(sliderId), interval);
+                    });
+                }
+
+                // Iniciar autoplay do slider "painel0"
+                document.addEventListener("DOMContentLoaded", () => {
+                    startAutoplay("slider-painel0", 4000); // 4s por slide;
+                    startAutoplay("slider-painel1", 3200); // 4s por slide;
+                    startAutoplay("slider-painel2", 4100); // 4s por slide;
+                    startAutoplay("slider-painel3", 3500); // 4s por slide;
+                    startAutoplay("slider-painel4", 4000); // 4s por slide;
+                    startAutoplay("slider-painel5", 3800); // 4s por slide;
+                    startAutoplay("slider-painel6", 4100); // 4s por slide
+                });
+            </script>
+
+            <!-- Painel 1 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel1')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Primeiro Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel1')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel1" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel1">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/001_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/002_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/003_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/004_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/005_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/006_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/007_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 008 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel1/008_painel1_2022.jpg"
+                                            alt="V Seminário - Painel 1"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/6knbyMQZee8?si=88W82UogMQFvXVsP" target="_blank"
+                            class="absolute bottom-6 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/6knbyMQZee8?si=88W82UogMQFvXVsP" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Participantes -->
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ELIAS MUBARAK</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio Mubarak Advogados
+                                Associados</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">DIEGO FALECK</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio Faleck e Associados</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">GABRIEL AUGUSTO LUÍS TEIXEIRA GONÇALVES
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-tight">Procurador-chefe da Dívida Ativa na 3ª
+                                Região</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ANDREW BODNAR</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Vice-Presidente Burford
+                                (Londres)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">MINISTRO MARCO AURÉLIO GASTALDI BUZZI</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Ministro do Superior Tribunal de Justiça
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ERIC CERANTE PESTRE</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio Sérgio Bermudes Advogados
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">SÉRGIO MOURÃO CÔRREA LIMA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio Osmar Brina & Sérgio
+                                Mourão Advogados</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Painel 2 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel2')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Segundo Painel</h3>
+                            <button
+                                class="p-2 rounded-full bg-ibra-blue text-white hover:bg-Segundo lue00 transition-colors"
+                                onclick="nextSlide('slider-painel2')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel2" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel2">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/001_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/002_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/003_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/004_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/005_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/006_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/007_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 008 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/008_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 009 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/009_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 010 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel2/010_painel2_2022.jpg"
+                                            alt="V Seminário - Painel 2"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/lYf5Xe1o6as?si=-p6cbjamkCIKKCDO" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/lYf5Xe1o6as?si=-p6cbjamkCIKKCDO" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Participantes -->
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ERONIDES APARECIDO RODRIGUES DOS SANTOS
+                            </h4>
+                            <p class="text-gray-600 text-sm leading-tight">Procurador de Justiça do Estado de São
+                                Paulo</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">CHRISTOPHER PEASE</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado Harneys (BVI)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">DESEMBARGADOR ANTÔNIO CARLOS ALVES BRAGA
+                                JÚNIOR</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Desembargador da 6ª Câmara de Direito
+                                Público do Tribunal de Justiça de São Paulo</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">NICOSIA LAWSON</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogada. Baker & Partners (Cayman)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">DANIEL CARNIO COSTA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Presidente da Unidade Nacional de
+                                Capacitação do Ministério Público</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">MINISTRO VILLAS BÔAS CUEVA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Ministro do Superior Tribunal de Justiça
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Painel 3 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel3')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Terceiro Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel3')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel3" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel3">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/001_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/002_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/003_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/004_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/005_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/006_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel3/007_painel3_2022.jpg"
+                                            alt="V Seminário - Painel 3"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/i9a_fDS9yco?si=22d3Wtl0WNedKeb_" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/i9a_fDS9yco?si=22d3Wtl0WNedKeb_" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Participantes -->
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">PROFESSORA ANA E. CARRILLO DEL TESO</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Professora de Direito Processual na
+                                Universidade de Salamanca (Espanha)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">MARTIN KENNEY</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado Martin Kenney &amp; Co.
+                                Solicitors (BVI)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">FREDERICO REZENDE</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado e sócio fundador da F. Rezende
+                                Consultoria &amp; Administração Judicial</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">LUCIO ALVES ANGELO JÚNIOR</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advocacia Geral da União</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">RENATO CAPANEMA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Auditor CGU e Diretor de Fiscalização na
+                                Câmara dos Deputados</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Painel 4 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel4')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Quarto Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel4')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel4" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel4">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/001_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/002_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/003_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/004_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/005_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/006_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel4/007_painel4_2022.jpg"
+                                            alt="V Seminário - Painel 4"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/kCOLgae3Kq0?si=5iAI7oTaTz6ptC5I" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/kCOLgae3Kq0?si=5iAI7oTaTz6ptC5I" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Participantes -->
+                    <div class="space-y-3">
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ANA MARIA BELOTTO</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogada. Sócia, Madruga BTW</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">REBECCA HUME</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Sócia. Gateley Legal (Londres)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">PAUL SMITH</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado no Harneys (Cayman Island)</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">TOMISLAV SUNJKA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado no Sunjka Attorneys at Law
+                                (Sérvia)
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">MARCUS VINICIUS VITA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Advogado. Sócio no Wald, Antunes, Vita e
+                                Blattner Advogados</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Painel 5 -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <!-- Slider de Imagens -->
+                    <div class="relative">
+                        <div class="flex items-center justify-between mb-4">
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="prevSlide('slider-painel5')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 19l-7-7 7-7"></path>
+                                </svg>
+                            </button>
+                            <h3 class="font-playfair text-2xl font-bold text-ibra-blue">Quinto Painel</h3>
+                            <button class="p-2 rounded-full bg-ibra-blue text-white hover:bg-blue-800 transition-colors"
+                                onclick="nextSlide('slider-painel5')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="slider-painel5" class="overflow-hidden rounded-lg">
+                            <div class="flex transition-transform duration-300 ease-in-out"
+                                id="slide-container-painel5">
+
+                                <!-- 001 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/001_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 002 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/002_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 003 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/003_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 004 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/004_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 005 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/005_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 006 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/006_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 007 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/007_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 008 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/008_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 009 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/009_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+                                <!-- 010 -->
+                                <div class="w-full flex-shrink-0">
+                                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                                        <img src="assets/images/eventos/2022/painel5/010_painel5_2022.jpg"
+                                            alt="V Seminário - Painel 5"
+                                            class="absolute top-0 left-0 w-full h-full object-cover">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- Botão YouTube fixo no canto inferior direito -->
+                        <!-- Versão desktop/tablet -->
+                        <a href="https://youtu.be/d1ezdq0cFfU?si=cs5sbok9z47dX43X" target="_blank"
+                            class="absolute bottom-3 right-3 hidden sm:flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-4 py-2 rounded-lg shadow-md transition">
+                            Assista no
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+
+                        <!-- Versão mobile -->
+                        <a href="https://youtu.be/d1ezdq0cFfU?si=cs5sbok9z47dX43X" target="_blank"
+                            class="absolute bottom-3 right-3 flex sm:hidden items-center justify-center bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-md transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23.498 6.186a2.97 2.97 0 0 0-2.09-2.103C19.536 3.5 12 3.5 12 3.5s-7.536 0-9.408.583a2.97 2.97 0 0 0-2.09 2.103A31.86 31.86 0 0 0 .5 12a31.86 31.86 0 0 0 .002 5.814 2.97 2.97 0 0 0 2.09 2.103C4.464 20.5 12 20.5 12 20.5s7.536 0 9.408-.583a2.97 2.97 0 0 0 2.09-2.103A31.86 31.86 0 0 0 23.5 12a31.86 31.86 0 0 0-.002-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Participantes -->
+                    <div class="space-y-3">
+                        <div>
+                            <p class="text-gray-600 text-sm leading-tight">Mediador</p>
+                            <h4 class="font-semibold text-ibra-blue mb-1">ANDRÉ FERREIRA DA ROSA ROCHA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Vice-Presidente do Ibra</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-gray mb-1">EXPOSITORES:</h4>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">THIAGO VIEIRA</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Chefe de divisão da Gestão de Sistemas
+                                Corporativos do CNJ</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">FERNANDA MATHIAS</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Analista Judiciária Supremo Tribunal
+                                Federal</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">OTÁVIO CARNEIRO</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Diretor Executivo de Investimentos na
+                                Enforce</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-ibra-blue mb-1">PAULO HENRIQUE DOS SANTOS</h4>
+                            <p class="text-gray-600 text-sm leading-tight">Recuperação de Ativos e Combate à
+                                Corrupção no âmbito da AGU</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+            <!-- Discurso de Encerramento-->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="text-center mb-12">
+                    <div class="flex justify-center mb-6">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/6g1havxmjz0?si=17GpueY3TuAtrfsL"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                        Discurso de Encerramento
+                    </h2>
+                    <p class="text-gray-600 text-lg">Carlos Fernando Mathias</p>
+                    <p>Presidente do Instituto Íbero Brasileiro de Estudos Jurídicos</p>
+                </div>
+            </div>
+
+            <!-- Sunset -->
+<div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+    <div class="text-center mb-12">
+        <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+            Sunset
+        </h2>
+    </div>
+
+    <!-- Slider Sunset -->
+    <div class="relative w-full max-w-5xl mx-auto">
+        <div class="overflow-hidden rounded-xl">
+            <div class="flex transition-transform duration-300 ease-in-out" id="slide-container-painel6">
+                
+                <!-- 001 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/001_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 002 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/002_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 003 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/003_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 004 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/004_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 005 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/005_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 006 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/006_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 007 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/007_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 008 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/008_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 009 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/009_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 010 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/010_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 011 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/011_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 012 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/012_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 013 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/013_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 014 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/014_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 015 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/015_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 016 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/016_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 017 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/017_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 018 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/018_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+                <!-- 019 -->
+                <div class="w-full flex-shrink-0">
+                    <div class="relative w-full pb-[66.67%] bg-gray-200 rounded-lg overflow-hidden">
+                        <img src="assets/images/eventos/2022/sunset/019_sunset_2022.jpg"
+                            alt="V Seminário - Sunset"
+                            class="absolute top-0 left-0 w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Controles -->
+        <div class="flex justify-center mt-4 space-x-4">
+            <button onclick="prevSlide('painel6')" class="px-4 py-2 bg-ibra-blue text-white rounded-lg">Anterior</button>
+            <button onclick="nextSlide('painel6')" class="px-4 py-2 bg-ibra-blue text-white rounded-lg">Próximo</button>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+
+        <!-- Patrocinadores -->
+        <div class="py-16 bg-ibra max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-3xl font-bold text-ibra-blue mb-4">
+                    Apoiadores Acadêmicos
+                </h2>
+                <p class="text-gray-600 text-lg">Empresas e instituições que apoiaram o evento</p>
+            </div>
+
+            <!-- Container do slider com padding para os botões -->
+            <!-- Container do slider -->
+            <div class="relative overflow-hidden mx-6 sm:mx-12">
+                <div id="sponsors-slider" class="flex transition-transform duration-500 ease-in-out">
+
+                    <!-- Cada logo -->
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/bermudes.png" alt="Bermudes Advogados"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/enforce.png" alt="Enforce Community"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/harneys.png" alt="Harneys"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/kaysserlian.png" alt="Krikor Kaysserlian"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/kroll.jpg" alt="Kroll"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/mks.png" alt="Martin Kenney"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/medarbb.jpg" alt="MediaRB"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/mubarak.png" alt="Mubarak"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/wald.png" alt="Wald"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/triunfae.png" alt="Triunfae"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/bicalho.png" alt="Bernardo Bicalho"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/bermudes.png" alt="Bermudes Advogados"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/enforce.png" alt="Enforce Community"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/harneys.png" alt="Harneys"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/kaysserlian.png" alt="Krikor Kaysserlian"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/kroll.jpg" alt="Kroll"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/mks.png" alt="Martin Kenney"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/medarbb.jpg" alt="MediaRB"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/mubarak.png" alt="Mubarak"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/wald.png" alt="Wald"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/triunfae.png" alt="Triunfae"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                    <div class="flex-shrink-0 w-1/2 sm:w-1/3 lg:w-1/4 px-2">
+                        <div
+                            class="bg-white p-4 sm:p-6 rounded-lg shadow-md flex items-center justify-center h-20 sm:h-24">
+                            <img src="assets/images/eventos/sponsors/bicalho.png" alt="Bernardo Bicalho"
+                                class="object-contain h-12 sm:h-16 lg:h-20 max-h-20 mx-auto">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botões navegação -->
+                <button id="sponsors-prev"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 bg-ibra-blue bg-opacity-35 text-white p-2 rounded-full shadow-md hover:bg-blue-800 hover:bg-opacity-50 transition-colors z-10">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                        </path>
+                    </svg>
+                </button>
+                <button id="sponsors-next"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 bg-ibra-blue bg-opacity-35 text-white p-2 rounded-full shadow-md hover:bg-blue-800 hover:bg-opacity-50 transition-colors z-10">
+                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+
+
+        <!-- Navegação entre Eventos -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Layout Desktop: 3 colunas lado a lado -->
+                <div class="hidden lg:flex justify-between items-center">
+                    <a href="evento-2022.html"
+                        class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                        Evento Anterior (2022)
+                    </a>
+                    <a href="../index.html"
+                        class="bg-ibra-light-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        Voltar ao Início
+                    </a>
+                    <a href="evento-2024.html"
+                        class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                        Próximo Evento (2024)
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Layout Tablet: Botão central em cima, navegação embaixo -->
+                <div class="hidden md:block lg:hidden">
+                    <div class="text-center mb-6">
+                        <a href="../index.html"
+                            class="inline-block bg-ibra-light-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                            Voltar ao Início
+                        </a>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <a href="evento-2022.html"
+                            class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            Evento Anterior (2022)
+                        </a>
+                        <a href="evento-2024.html"
+                            class="flex items-center text-ibra-blue hover:text-blue-800 font-medium transition-colors">
+                            Próximo Evento (2024)
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Layout Mobile: Stack vertical -->
+                <div class="md:hidden space-y-4">
+                    <div class="text-center">
+                        <a href="../index.html"
+                            class="inline-block bg-ibra-light-blue text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors w-full max-w-xs">
+                            Voltar ao Início
+                        </a>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <a href="evento-2022.html"
+                            class="flex items-center justify-center text-ibra-blue hover:text-blue-800 font-medium transition-colors py-2 px-4 rounded-lg border border-gray-200 hover:border-ibra-blue">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 19l-7-7 7-7">
+                                </path>
+                            </svg>
+                            Evento Anterior (2022)
+                        </a>
+                        <a href="evento-2024.html"
+                            class="flex items-center justify-center text-ibra-blue hover:text-blue-800 font-medium transition-colors py-2 px-4 rounded-lg border border-gray-200 hover:border-ibra-blue">
+                            Próximo Evento (2024)
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-16 bg-ibra-blue">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="font-playfair text-3xl font-bold text-white mb-4">
+                    Interessado em Participar do Próximos Eventos?
+                </h2>
+                <p class="text-blue-100 text-lg mb-8">
+                    Fique por dentro das novidades e seja o primeiro a saber sobre os próximos seminários
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="../index.html#contato"
+                        class="bg-ibra-gold hover:bg-yellow-500 text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                        Entre em Contato
+                    </a>
+                    <a href="../index.html"
+                        class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-ibra-blue px-8 py-3 rounded-lg font-semibold transition-all">
+                        Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER PADRONIZADO -->
+        <footer class="bg-ibra-gray text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-4 gap-8">
+                    <!-- Logo e Descrição -->
+                    <div class="lg:col-span-2">
+                        <div class="flex flex-col items-start mb-6">
+                            <img src="assets/logos/logo_branco_ibra.png"
+                                alt="IBRA - Instituto Brasileiro de Rastreamento" class="h-16 w-auto mb-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                Instituto Brasileiro de Rastreamento de Ativos
+                            </p>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.097.118.112.221.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24c6.624 0 11.99-5.367 11.99-11.987C24.007 5.367 18.641.001 12.017.001z" />
+                                </svg>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white hover:bg-ibra-blue transition-all">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Links Rápidos -->
+                    <div>
+                        <h3 class="font-semibold text-white mb-6">Links Rápidos</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#sobre" class="text-gray-300 hover:text-white transition-colors">Sobre o
+                                    IBRA</a></li>
+                            <li><a href="#eventos" class="text-gray-300 hover:text-white transition-colors">Eventos</a>
+                            </li>
+                            <li><a href="#selo" class="text-gray-300 hover:text-white transition-colors">Selo
+                                    IBRA</a>
+                            </li>
+                            <li><a href="#board" class="text-gray-300 hover:text-white transition-colors">Board</a>
+                            </li>
+                            <li><a href="#noticias"
+                                    class="text-gray-300 hover:text-white transition-colors">Notícias</a></li>
+                            <li><a href="#contato" class="text-gray-300 hover:text-white transition-colors">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Contato -->
+                    <div>
+                        <h3 class="font-semibold text-white mb-6">Contato</h3>
+                        <div class="space-y-3">
+                            <p class="text-gray-300 text-sm">
+                                <span class="block font-medium text-white mb-1">E-mail:</span>
+                                <a href="mailto:contato@ibrativos.com.br" class="hover:text-white transition-colors">
+                                    contato@ibrativos.com.br
+                                </a>
+                            </p>
+                            <p class="text-gray-300 text-sm">
+                                <span class="block font-medium text-white mb-1">Telefone:</span>
+                                (11) 3456-7890
+                            </p>
+                            <p class="text-gray-300 text-sm">
+                                <span class="block font-medium text-white mb-1">Endereço:</span>
+                                Av. Paulista, 1000 - Sala 1001<br />
+                                São Paulo - SP, CEP: 01310-100
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha Separadora -->
+                <div class="section-divider my-8"></div>
+
+                <!-- Copyright -->
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 text-sm">
+                        © 2025 IBRA - Instituto Brasileiro de Rastreamento de Ativos. Todos os direitos reservados.
+                    </p>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Política de
+                            Privacidade</a>
+                        <a href="#" class="text-gray-300 hover:text-white text-sm transition-colors">Termos de
+                            Uso</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script>
+            // Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Slider Functions para os painéis
+            let currentSlides = {
+                'painel0': 0,
+                'painel1': 0,
+                'painel2': 0,
+                'painel3': 0,
+                'painel4': 0,
+                'painel5': 0,
+                'painel6': 0,
+                'painel7': 0,
+                'painel8': 0,
+            };
+
+            function nextSlide(sliderId) {
+                const painelName = sliderId.replace('slider-', '');
+                const container = document.getElementById(`slide-container-${painelName}`);
+                const slides = container.children;
+                const totalSlides = slides.length;
+
+                currentSlides[painelName] = (currentSlides[painelName] + 1) % totalSlides;
+                updateSlider(painelName);
+            }
+
+            function prevSlide(sliderId) {
+                const painelName = sliderId.replace('slider-', '');
+                const container = document.getElementById(`slide-container-${painelName}`);
+                const slides = container.children;
+                const totalSlides = slides.length;
+
+                currentSlides[painelName] = (currentSlides[painelName] - 1 + totalSlides) % totalSlides;
+                updateSlider(painelName);
+            }
+
+            function updateSlider(painelName) {
+                const container = document.getElementById(`slide-container-${painelName}`);
+                const translateX = -currentSlides[painelName] * 100;
+                container.style.transform = `translateX(${translateX}%)`;
+            }
+
+            // Slider de Patrocinadores
+            let sponsorsCurrentIndex = 0;
+            const sponsorsSlider = document.getElementById('sponsors-slider');
+            const sponsorsPrev = document.getElementById('sponsors-prev');
+            const sponsorsNext = document.getElementById('sponsors-next');
+            const sponsorsSlideWidth = 224; // 200px + 24px margin
+
+            if (sponsorsNext && sponsorsPrev && sponsorsSlider) {
+                sponsorsNext.addEventListener('click', () => {
+                    const maxScroll = sponsorsSlider.scrollWidth - sponsorsSlider.clientWidth;
+                    const currentTranslate = sponsorsCurrentIndex * sponsorsSlideWidth;
+
+                    if (currentTranslate < maxScroll) {
+                        sponsorsCurrentIndex++;
+                    } else {
+                        sponsorsCurrentIndex = 0; // Volta ao início
+                    }
+
+                    sponsorsSlider.style.transform = `translateX(-${sponsorsCurrentIndex * sponsorsSlideWidth}px)`;
+                });
+
+                sponsorsPrev.addEventListener('click', () => {
+                    if (sponsorsCurrentIndex > 0) {
+                        sponsorsCurrentIndex--;
+                    } else {
+                        // Vai para o final
+                        const maxIndex = Math.floor((sponsorsSlider.scrollWidth - sponsorsSlider.clientWidth) / sponsorsSlideWidth);
+                        sponsorsCurrentIndex = maxIndex;
+                    }
+
+                    sponsorsSlider.style.transform = `translateX(-${sponsorsCurrentIndex * sponsorsSlideWidth}px)`;
+                });
+
+                // Auto-slide dos patrocinadores (opcional)
+                setInterval(() => {
+                    sponsorsNext.click();
+                }, 4000);
+            }
+        </script>
+</body>
+
+</html>

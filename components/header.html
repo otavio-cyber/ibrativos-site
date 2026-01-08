@@ -1,0 +1,104 @@
+<!-- HEADER PADRONIZADO PARA REUTILIZAÇÃO -->
+<header class="bg-white shadow-lg fixed w-full top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center py-4">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="../assets/logos/logo_final_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento" 
+             class="h-12 md:h-16 max-w-56 object-contain">
+      </div>
+
+      <!-- Navigation Desktop -->
+      <nav class="hidden lg:flex space-x-8">
+        <a href="../index.html" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Home</a>
+        <a href="../index.html#sobre" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">O IBRA</a>
+        <a href="../index.html#selo" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Selo</a>
+
+        <!-- Dropdown Eventos -->
+        <div class="relative group">
+          <button class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+            Eventos
+            <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <!-- Dropdown Menu -->
+          <div class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+            <div class="py-3">
+              <a href="evento-2024.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">VI Seminário 2024</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2023.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">V Seminário 2023</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2022.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">IV Seminário 2022</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">III Seminário 2021</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2020.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">II Seminário 2020</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2019.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">I Seminário 2019</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+              <a href="evento-2018.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                <div class="font-medium">Seminário 2018</div>
+                <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../index.html#noticias" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Notícias</a>
+        <a href="../index.html#contato" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">Contato</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden flex flex-col space-y-1.5 p-2" id="mobile-menu-btn" aria-label="Menu">
+        <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line1"></div>
+        <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line2"></div>
+        <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line3"></div>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+    <div class="px-4 py-4 space-y-1">
+      <a href="../index.html" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Home</a>
+      <a href="../index.html#sobre" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">O IBRA</a>
+      <a href="../index.html#selo" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Selo</a>
+      
+      <!-- Eventos Mobile -->
+      <div class="py-2">
+        <button class="w-full flex items-center justify-between py-3 px-3 text-gray-700 hover:text-ibra-blue transition-colors" 
+                onclick="toggleMobileEvents()" id="mobile-events-btn">
+          <span>Eventos</span>
+          <svg class="w-5 h-5 transition-transform duration-300" id="mobile-events-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div id="mobile-eventos" class="hidden pl-6 space-y-1 mt-2">
+          <a href="evento-2024.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">VI Seminário 2024</a>
+          <a href="evento-2023.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">V Seminário 2023</a>
+          <a href="evento-2022.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">IV Seminário 2022</a>
+          <a href="evento-2021.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">III Seminário 2021</a>
+          <a href="evento-2020.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">II Seminário 2020</a>
+          <a href="evento-2019.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">I Seminário 2019</a>
+          <a href="evento-2018.html" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">Seminário 2018</a>
+        </div>
+      </div>
+      
+      <a href="../index.html#noticias" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Notícias</a>
+      <a href="../index.html#contato" class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Contato</a>
+    </div>
+  </div>
+</header>

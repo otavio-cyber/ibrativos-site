@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IBRA - Instituto Brasileiro de Rastreamento de Ativos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif'],
+          },
+          colors: {
+            'ibra-blue': '#1e3a8a',
+            'ibra-light-blue': '#3b82f6',
+            'ibra-gold': '#f59e0b',
+            'ibra-gray': '#374151',
+            'ibra-light-gray': '#f8fafc',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .hero-bg {
+      position: relative;
+      background: url('assets/images/background_hero_seminario.jpg') no-repeat center top;
+      background-size: cover;
+      background-color: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(to right, transparent, #4b5563, transparent);
+    }
+  </style>
+</head>
+
+<body class="font-inter bg-white">
+  <!-- HEADER PADRONIZADO -->
+  <header class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo clicável que leva a https://ibrativos.com.br -->
+        <div class="flex items-center">
+          <a href="https://ibrativos.com.br">
+            <img src="assets/logos/logo_final_ibra.png" alt="IBRA - Instituto Brasileiro de Rastreamento"
+              class="h-12 md:h-16 max-w-56 object-contain">
+          </a>
+        </div>
+
+
+        <!-- Navigation Desktop -->
+        <nav class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">HOME</a>
+          <a href="#sobre" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">O IBRA</a>
+          <a href="#selo" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">SELO</a>
+
+          <!-- Dropdown Eventos -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-ibra-blue font-medium transition-colors flex items-center">
+              EVENTOS
+              <svg class="w-4 h-4 ml-1 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <!-- Dropdown Menu -->
+            <div
+              class="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+              <div class="py-3">
+                <a href="seminario-2025.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">VII Seminário 2025</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2024.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">VI Seminário 2024</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2023.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">V Seminário 2023</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2022.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">IV Seminário 2022</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html"
+                  class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">III Seminário 2021</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <!-- <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">II Seminário 2020</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">I Seminário 2019</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a>
+                <a href="seminario-2021.html" class="block px-4 py-3 text-gray-700 hover:bg-ibra-light-gray hover:text-ibra-blue transition-colors rounded-lg mx-2">
+                  <div class="font-medium">Seminário 2018</div>
+                  <div class="text-xs text-gray-500 mt-1">Brasília-DF</div>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <a href="#noticias" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">NOTÍCIAS</a>
+          <a href="#contato" class="text-gray-700 hover:text-ibra-blue font-medium transition-colors">CONTATO</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button class="lg:hidden flex flex-col space-y-1.5 p-2" id="mobile-menu-btn" aria-label="Menu">
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line1"></div>
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line2"></div>
+          <div class="w-6 h-0.5 bg-gray-700 transition-all duration-300" id="line3"></div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="lg:hidden hidden bg-white border-t shadow-lg" id="mobile-menu">
+      <div class="px-4 py-4 space-y-1">
+        <a href="index.html"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">HOME</a>
+        <a href="#sobre"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">O
+          IBRA</a>
+        <a href="#selo"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">SELO</a>
+
+        <!-- Eventos Mobile -->
+        <div class="py-2">
+          <button
+            class="w-full flex items-center justify-between py-3 px-3 text-gray-700 hover:text-ibra-blue transition-colors"
+            onclick="toggleMobileEvents()" id="mobile-events-btn">
+            <span>EVENTOS</span>
+            <svg class="w-5 h-5 transition-transform duration-300" id="mobile-events-icon" fill="none"
+              stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div id="mobile-eventos" class="hidden pl-6 space-y-1 mt-2">
+            <a href="seminario-2024.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">VI Seminário 2024</a>
+            <a href="seminario-2023.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">V Seminário 2023</a>
+            <a href="seminario-2022.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">IV Seminário 2022</a>
+            <a href="seminario-2021.html"
+              class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">III Seminário 2021</a>
+            <!-- <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">II Seminário 2020</a> -->
+            <!-- <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">I Seminário 2019</a>
+            <a href="" class="block py-2 text-gray-600 hover:text-ibra-blue text-sm transition-colors">Seminário 2018</a> -->
+          </div>
+        </div>
+
+        <a href="#noticias"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Notícias</a>
+        <a href="#contato"
+          class="block py-3 px-3 text-gray-700 hover:text-ibra-blue hover:bg-ibra-light-gray rounded-lg transition-colors">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <!-- Hero -->
+    <section id="inicio" class="pt-24">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="hero-bg rounded-2xl h-56 md:h-72 lg:h-96"></div>
+      </div>
+    </section>
+
+    <!-- Programação -->
+    <section id="programacao" class="py-12 bg-ibra-light-gray">
+      <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center">
+        <h2 class="text-3xl md:text-4xl font-playfair font-bold text-ibra-blue mb-8">
+          VII Seminário Internacional de Rastreamento de Ativos
+        </h2>
+
+        <!-- Recepção e Chegada (PRONTO) -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            RECEPÇÃO E CHEGADA DOS PARTICIPANTES
+          </h3>
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="chegada"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-chegada" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS will inject 4 images -->
+              </div>
+              <button data-target="chegada"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+          <p class="text-left text-gray-700">O VII Seminário Internacional de Rastreamento de Ativos foi realizado em 3
+            de novembro, em Brasília, reunindo especialistas de vários países para discutir estratégias no enfrentamento
+            à fraude, corrupção e lavagem de dinheiro. Com o tema “Da Alocação dos Incentivos no Rastreamento de Ativos
+            no Combate à Fraude e Corrupção”, o evento destacou avanços legais, desafios processuais e boas práticas na
+            recuperação de ativos.
+
+            <br><br>Em seis painéis temáticos, os participantes debateram desde a cooperação jurídica internacional até
+            a efetividade do sistema brasileiro no combate ao crime patrimonial. O encontro reafirmou a importância da
+            atualização técnica e do intercâmbio de conhecimento na construção de um ambiente jurídico mais eficiente e
+            transparente.
+          </p>
+        </div>
+
+        <!-- Mesa de Abertura (GRID com 13 imagens) -->
+        <section id="mesadeabertura" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            MESA DE ABERTURA
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="mesadeabertura"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">
+                ‹
+              </button>
+
+              <div id="slider-mesadeabertura"
+                class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS vai injetar os thumbs -->
+              </div>
+
+              <button data-target="mesadeabertura"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">
+                ›
+              </button>
+            </div>
+          </div>
+
+
+          <ul class="text-gray-700 text-left space-y-2">
+            <li>• <strong>Paulo Cezar dos Passos</strong> – Conselheiro Nacional e Presidente da Unidade Nacional de
+              Capacitação do Ministério Público</li>
+            <li>• <strong>Moura Ribeiro</strong> – Ministro do Superior Tribunal de Justiça</li>
+            <li>• <strong>Fernando da Silva Comin</strong> – Conselheiro Nacional do Ministério Público</li>
+            <li>• <strong>Karen Luise Vilanova</strong> – Conselheira Nacional do Ministério Público</li>
+            <li>• <strong>Rodrigo Kaysserlian</strong> – Diretor-Presidente do Instituto Brasileiro de Rastreamento de
+              Ativos</li>
+            <li>• <strong>Krikor Kaysserlian</strong> – Presidente do Conselho do Instituto Brasileiro de Rastreamento
+              de Ativos</li>
+            <li>• <strong>Orlando Geraldi</strong> – Desembargador do Tribunal de Justiça Militar do Estado de São Paulo
+            </li>
+            <li>• <strong>Emerson Sumariva Junior</strong> – Juiz de Segundo Grau e Coordenador da Quinta Câmara de
+              Direito Privado do Tribunal de Justiça de São Paulo</li>
+            <li>• <strong>Ives Gandra</strong> – Advogado e Sócio-Fundador do Escritório Gandra Martins <span
+                class="text-gray-500">(participação virtual)</span></li>
+          </ul>
+        </section>
+
+        <!-- Painel 1 -->
+        <section id="painel1" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Primeiro Painel — Como Citar Estruturas Jurídicas Estrangeiras
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel1"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel1" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 12 images -->
+              </div>
+              <button data-target="painel1"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left"><strong>Moderador:</strong> Luiz Felipe Salomão Filho – Advogado e Sócio no
+            Salomão Advogados</p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Humberto Martins</strong> – Ministro do Superior Tribunal de Justiça</li>
+            <li>• <strong>Amauri Chaves Arfelli</strong> – Promotor de Justiça do Ministério Público do Estado de São
+              Paulo</li>
+            <li>• <strong>Eronides Rodrigues Aparecido dos Santos</strong> – Procurador de Justiça do Ministério
+              Público do Estado de São Paulo</li>
+            <li>• <strong>Fernando Filgueiras de Araújo</strong> – Advogado da União <span
+                class="text-gray-500">(participação virtual)</span></li>
+            <li>• <strong>Gabriela Ruiz</strong> – Advogada e Sócia-Gerente do Escritório Kinge Ruiz</li>
+          </ul>
+        </section>
+
+        <!-- Painel 2 -->
+        <section id="painel2" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Segundo Painel — Desmistificando Instrumentos para Recomposição de Prejuízos
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel2"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel2" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 26 images -->
+              </div>
+              <button data-target="painel2"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left space-y-3">
+            <strong>Moderador:</strong> César Eduardo Temer Zalaf – Desembargador do Tribunal de Justiça do Estado de
+            São Paulo
+          </p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Villas Bôas Cueva</strong> – Ministro do Superior Tribunal de Justiça</li>
+            <li>• <strong>Guilherme Setoguti</strong> – Sócio da Monteiro de Castro Advogados</li>
+            <li>• <strong>Clarissa Tauk</strong> – Juíza de Direito do Tribunal de Justiça do Estado de São Paulo e
+              Juíza Auxiliar da Corregedoria Nacional de Justiça</li>
+            <li>• <strong>Gustavo Sanseverino</strong> – Advogado no Matter, Boetcher, Zanini e Souza Advogados</li>
+            <li>• <strong>Ronaldo Vieira Francisco</strong> – Promotor de Justiça do Ministério Público do Estado de
+              Mato Grosso do Sul</li>
+          </ul>
+        </section>
+
+        <!-- Painel 3 -->
+        <section id="painel3" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Terceiro Painel — Dos Obstáculos Comumente Identificados no Curso do Litígio
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel3"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel3" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 15 images -->
+              </div>
+              <button data-target="painel3"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left space-y-3">
+            <strong>Moderador:</strong> Marco Buzzi – Ministro do Superior Tribunal de Justiça
+          </p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Eric Pestre</strong> – Advogado e Sócio do Escritório Bermudes Advogados</li>
+            <li>• <strong>Nilton Beli</strong> – Promotor de Justiça do Ministério Público do Estado de São Paulo</li>
+            <li>• <strong>Thiago Peixoto</strong> – Sócio Sênior de Ferro, Castro Neves, Daltro e Gomide Advogados
+            </li>
+            <li>• <strong>Andrew Bodnar</strong> – Advogado e Vice-Presidente da Burford em Londres</li>
+            <li>• <strong>Fernanda Mathias</strong> – Assessora de Ministro no Superior Tribunal de Justiça</li>
+          </ul>
+        </section>
+
+        <!-- Painel 4 -->
+        <section id="painel4" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Quarto Painel — Quanto Vale uma Fraude?
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel4"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel4" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 13 images -->
+              </div>
+              <button data-target="painel4"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left space-y-3">
+            <strong>Moderador:</strong> Raul Araújo – Ministro do Superior Tribunal de Justiça
+          </p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Flávio Boson Gamboji</strong> – Desembargador Federal do Tribunal Regional da 6ª Região</li>
+            <li>• <strong>Daise Fajardo Nogueira Jacot</strong> – Desembargadora do Tribunal de Justiça do Estado de
+              São Paulo</li>
+            <li>• <strong>Rita de Cássia Bérgamo</strong> – Promotora de Justiça do Ministério Público do Estado de
+              São Paulo</li>
+            <li>• <strong>João de Oliveira Filho</strong> – Juiz de Direito do Tribunal de Justiça do Estado de São
+              Paulo</li>
+            <li>• <strong>André Rocha</strong> – Diretor Vice-Presidente do Instituto Brasileiro de Rastreamento de
+              Ativos (IBRA)</li>
+          </ul>
+        </section>
+
+        <!-- Painel 5 -->
+        <section id="painel5" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Quinto Painel — Culpa da Vítima? Função do Administrador Judicial
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel5"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel5" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 17 images -->
+              </div>
+              <button data-target="painel5"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left space-y-3">
+            <strong>Moderador:</strong> Sebastião Reis – Ministro do Superior Tribunal de Justiça
+          </p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Fernando Célio Brito Nogueira</strong> – Promotor de Justiça de Falências e Liquidação
+              Extrajudicial da Comarca do Estado de São Paulo <span class="text-gray-500">(participação
+                virtual)</span></li>
+            <li>• <strong>Luís Cláudio Montoro</strong> – Administrador Judicial e Presidente do Instituto Recupera
+              Brasil</li>
+            <li>• <strong>Frederico Resende</strong> – Advogado e Sócio da F. Resende Consultoria e Administração
+              Judicial</li>
+            <li>• <strong>Stuart Cullen</strong> – Sócio-Gerente e Chefe da Área de Resolução de Litígios no
+              Escritório das Ilhas Virgens Britânicas</li>
+            <li>• <strong>Sérgio Najem</strong> – Advogado</li>
+            <li>• <strong>Aline Gomes Caselatto</strong> – Assessora de Ministro do Superior Tribunal de Justiça</li>
+          </ul>
+        </section>
+
+        <!-- Painel 6 -->
+        <section id="painel6" class="bg-white rounded-2xl shadow-lg p-6 mb-8 animate-fade-in">
+          <h3 class="text-xl md:text-2xl font-semibold text-ibra-blue mb-4 border-b border-gray-200 pb-2">
+            Sexto Painel — Regras do Jogo: Perspectivas Legislativas e Institucionais
+          </h3>
+
+          <div class="relative mb-4">
+            <div class="flex items-center gap-4">
+              <button data-target="painel6"
+                class="slider-prev bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">‹</button>
+              <div id="slider-painel6" class="horizontal-slider no-scrollbar flex space-x-4 overflow-x-auto py-2">
+                <!-- JS inject 5 images -->
+              </div>
+              <button data-target="painel6"
+                class="slider-next bg-ibra-blue text-white w-8 h-8 rounded-full hidden sm:flex items-center justify-center">›</button>
+            </div>
+          </div>
+
+          <p class="text-gray-700 text-left space-y-3">
+            <strong>Moderador:</strong> Renato Capanema – Auditor da Controladoria-Geral da União e Diretor de
+            Fiscalização na Câmara dos Deputados
+          </p>
+          <ul class="text-gray-700 text-left space-y-3">
+            <li>• <strong>Vinicius Rapozo de Carvalho</strong> – Deputado Federal</li>
+            <li>• <strong>Julia Schutt</strong> – Promotora de Justiça do Ministério Público do Estado do Rio Grande
+              do Sul</li>
+            <li>• <strong>Gabriel Buschinelli</strong> – Diretor de Programa da Secretaria de Reformas Econômicas do
+              Ministério da Fazenda</li>
+            <li>• <strong>Antenor Madruga</strong> – Sócio no Madruga BTW Advogados</li>
+            <li>• <strong>Chico Rodrigues</strong> – Senador Federal</li>
+          </ul>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-ibra-gray text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-4 gap-8">
+        <div class="lg:col-span-2">
+          <img src="assets/logos/logo_branco_ibra.png" alt="IBRA" class="h-16 w-auto mb-4">
+          <p class="text-gray-300">Instituto Brasileiro de Rastreamento de Ativos</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white">in</a>
+            <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white">ig</a>
+            <a href="#" class="w-10 h-10 bg-gray-600 rounded-lg flex items-center justify-center text-white">yt</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-white mb-6">Links Rápidos</h3>
+          <ul class="space-y-3">
+            <li><a href="#programacao" class="text-gray-300 hover:text-white">Programação</a></li>
+            <li><a href="#contato" class="text-gray-300 hover:text-white">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-white mb-6">Contato</h3>
+          <p class="text-gray-300 text-sm">contato@ibrativos.com.br</p>
+          <p class="text-gray-300 text-sm mt-2">Av. Paulista, 1000 - São Paulo - SP</p>
+        </div>
+      </div>
+
+      <div class="section-divider my-8"></div>
+      <div class="flex justify-between items-center text-gray-300 text-sm">
+        <p>© 2025 IBRA - Instituto Brasileiro de Rastreamento de Ativos. Todos os direitos reservados.</p>
+        <div class="space-x-4">
+          <a href="#" class="hover:text-white">Política de Privacidade</a>
+          <a href="#" class="hover:text-white">Termos de Uso</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- UNIVERSAL MODAL (hidden initially) -->
+  <div id="imageModal" class="fixed inset-0 z-50 bg-black bg-opacity-90 hidden items-center justify-center p-4">
+    <button id="modalClose" class="absolute top-6 right-6 text-white text-4xl font-bold leading-none">×</button>
+    <button id="modalPrev" class="absolute left-6 text-white text-5xl font-bold leading-none">‹</button>
+    <div class="max-w-[96vw] max-h-[92vh] flex items-center justify-center">
+      <img id="modalImg" src="" alt="Imagem ampliada" class="max-w-full max-h-full rounded-lg shadow-2xl" />
+    </div>
+    <button id="modalNext" class="absolute right-6 text-white text-5xl font-bold leading-none">›</button>
+  </div>
+
+  <script>
+    /*******************************
+     * Configuration of galleries
+     * Keys map to folder names; counts follow your input
+     *******************************/
+    const galleries = {
+      chegada: { folder: '001_chegada', prefix: '', count: 4, pattern: (i) => `assets/images/eventos/2025/001_chegada/${String(i).padStart(3, '0')}chegada.jpg` },
+      mesadeabertura: { folder: '002_abertura', prefix: 'mesaabertura', count: 13, pattern: (i) => `assets/images/eventos/2025/002_abertura/${String(i).padStart(3, '0')}mesaabertura.jpg` },
+      painel1: { folder: '003_painel1', prefix: 'painel1', count: 12, pattern: (i) => `assets/images/eventos/2025/003_painel1/${String(i).padStart(3, '0')}painel1.jpg` },
+      painel2: { folder: '004_painel2', prefix: 'painel2', count: 26, pattern: (i) => `assets/images/eventos/2025/004_painel2/${String(i).padStart(3, '0')}painel2.jpg` },
+      painel3: { folder: '005_painel3', prefix: 'painel3', count: 15, pattern: (i) => `assets/images/eventos/2025/005_painel3/${String(i).padStart(3, '0')}painel3.jpg` },
+      painel4: { folder: '006_painel4', prefix: 'painel4', count: 13, pattern: (i) => `assets/images/eventos/2025/006_painel4/${String(i).padStart(3, '0')}painel4.jpg` },
+      painel5: { folder: '007_painel5', prefix: 'painel5', count: 17, pattern: (i) => `assets/images/eventos/2025/007_painel5/${String(i).padStart(3, '0')}painel5.jpg` },
+      painel6: { folder: '008_painel6', prefix: 'painel6', count: 5, pattern: (i) => `assets/images/eventos/2025/008_painel6/${String(i).padStart(3, '0')}painel6.jpg` },
+    };
+
+    /*******************************
+     * Utility: create image element
+     *******************************/
+    function createThumb(src, alt, group, index) {
+      const wrapper = document.createElement('div');
+      wrapper.className = 'rounded overflow-hidden shadow-sm cursor-pointer bg-gray-50';
+      wrapper.style.minWidth = '8rem';
+      wrapper.style.maxWidth = '16rem';
+      wrapper.dataset.group = group;
+      wrapper.dataset.index = index;
+
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = alt || '';
+      img.className = 'w-full h-32 sm:h-40 object-cover';
+      wrapper.appendChild(img);
+
+      // overlay icon to indicate clickability (camera icon)
+      const icon = document.createElement('div');
+      icon.className = 'absolute right-2 top-2 bg-white bg-opacity-70 rounded-full p-1';
+      icon.innerHTML = '<svg class="w-4 h-4 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7h2l1-2h8l1 2h2a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3" stroke-width="1.5"></circle></svg>';
+      // position icon relative to wrapper
+      wrapper.style.position = 'relative';
+      wrapper.appendChild(icon);
+
+      return wrapper;
+    }
+
+    /*******************************
+     * Inject images into DOM
+     *******************************/
+    function injectGalleries() {
+      // chegada (slider)
+      const chegadaContainer = document.getElementById('slider-chegada');
+      for (let i = 1; i <= galleries.chegada.count; i++) {
+        const src = galleries.chegada.pattern(i);
+        const thumb = createThumb(src, `Chegada ${i}`, 'chegada', i - 1);
+        // style override for slider thumbnails (smaller)
+        thumb.classList.add('flex-shrink-0', 'w-48');
+        chegadaContainer.appendChild(thumb);
+      }
+
+      
+
+      // panels sliders
+      ['mesadeabertura', 'painel1', 'painel2', 'painel3', 'painel4', 'painel5', 'painel6'].forEach(key => {
+        const container = document.getElementById(`slider-${key}`);
+        if (!container) return;
+        const cfg = galleries[key];
+        for (let i = 1; i <= cfg.count; i++) {
+          const src = cfg.pattern(i);
+          const thumb = createThumb(src, `${key} ${i}`, key, i - 1);
+          thumb.classList.add('flex-shrink-0', 'w-48');
+          container.appendChild(thumb);
+        }
+      });
+    }
+
+    /*******************************
+     * Slider prev/next handlers
+     *******************************/
+    function initSliderControls() {
+      const nextButtons = document.querySelectorAll('.slider-next');
+      const prevButtons = document.querySelectorAll('.slider-prev');
+
+      nextButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const target = btn.dataset.target;
+          const slider = document.getElementById(`slider-${target}`) || document.getElementById(`slider-${target}`);
+          if (!slider) return;
+          slider.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+      });
+
+      prevButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const target = btn.dataset.target;
+          const slider = document.getElementById(`slider-${target}`) || document.getElementById(`slider-${target}`);
+          if (!slider) return;
+          slider.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+      });
+
+      // Show/hide arrows on small vs large screens: arrows are hidden by default on small screens via hidden sm:flex classes.
+    }
+
+    /*******************************
+     * Modal logic (universal)
+     *******************************/
+    const modal = document.getElementById('imageModal');
+    const modalImg = document.getElementById('modalImg');
+    const modalPrev = document.getElementById('modalPrev');
+    const modalNext = document.getElementById('modalNext');
+    const modalClose = document.getElementById('modalClose');
+
+    let currentGroup = null;
+    let currentIndex = 0;
+    let currentArray = [];
+
+    function openModal(group, index) {
+      currentGroup = group;
+      currentIndex = index;
+      // build group array of sources
+      const cfg = galleries[group];
+      if (!cfg) return;
+      currentArray = [];
+      for (let i = 1; i <= cfg.count; i++) {
+        currentArray.push(cfg.pattern(i));
+      }
+      // set image and show
+      modalImg.src = currentArray[currentIndex];
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      // trap focus? for simplicity, ensure keyboard works
+    }
+
+    function closeModal() {
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      modalImg.src = '';
+    }
+
+    function nextModal() {
+      if (!currentArray.length) return;
+      currentIndex = (currentIndex + 1) % currentArray.length;
+      modalImg.src = currentArray[currentIndex];
+    }
+
+    function prevModal() {
+      if (!currentArray.length) return;
+      currentIndex = (currentIndex - 1 + currentArray.length) % currentArray.length;
+      modalImg.src = currentArray[currentIndex];
+    }
+
+    function attachThumbClicks() {
+      document.body.addEventListener('click', (e) => {
+        // find the closest wrapper with dataset.group
+        const el = e.target.closest && e.target.closest('[data-group]');
+        if (!el) return;
+        const group = el.dataset.group;
+        const index = parseInt(el.dataset.index || 0, 10);
+        if (!group) return;
+        openModal(group, index);
+      });
+    }
+
+    // Close modal handlers
+    modalClose.addEventListener('click', closeModal);
+    modalNext.addEventListener('click', nextModal);
+    modalPrev.addEventListener('click', prevModal);
+
+    // click outside image closes
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    // keyboard
+    document.addEventListener('keydown', (e) => {
+      if (modal.classList.contains('hidden')) return;
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowRight') nextModal();
+      if (e.key === 'ArrowLeft') prevModal();
+    });
+
+    /*******************************
+     * Intersection observer for animations
+     *******************************/
+    function initObserver() {
+      const observerOptions = {
+        threshold: 0.12,
+        rootMargin: '0px 0px -50px 0px',
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('section').forEach((section) => {
+        observer.observe(section);
+      });
+    }
+
+    /*******************************
+     * Mobile menu & smooth scroll
+     *******************************/
+    (function initUI() {
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const line1 = document.getElementById('line1');
+      const line2 = document.getElementById('line2');
+      const line3 = document.getElementById('line3');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          if (mobileMenu.classList.contains('hidden')) {
+            line1.style.transform = 'rotate(0deg) translateY(0px)';
+            line2.style.opacity = '1';
+            line3.style.transform = 'rotate(0deg) translateY(0px)';
+          } else {
+            line1.style.transform = 'rotate(45deg) translateY(8px)';
+            line2.style.opacity = '0';
+            line3.style.transform = 'rotate(-45deg) translateY(-8px)';
+          }
+        });
+      }
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        });
+      });
+    })();
+
+    /*******************************
+     * Initialize everything
+     *******************************/
+    (function init() {
+      injectGalleries();
+      initSliderControls();
+      attachThumbClicks();
+      initObserver();
+    })();
+  </script>
+</body>
+
+</html>

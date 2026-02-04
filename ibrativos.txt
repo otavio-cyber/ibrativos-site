@@ -3,8 +3,10 @@
 │   ├── arquivos
 │   │   └── apresentacao_selo_integridade.pdf
 │   ├── images
+│   │   ├── alessandro-vieira.jpeg
 │   │   ├── background_hero_seminario.jpg
 │   │   ├── board_final_ibra.png
+│   │   ├── deputada-2.jpg
 │   │   ├── eventos
 │   │   │   ├── 001img-seminario-2024.jpg
 │   │   │   ├── 002img-seminario-2024.jpg
@@ -119,7 +121,10 @@
 │   │   │   │   │   ├── 006_painel6_2021.jpg
 │   │   │   │   │   ├── 007_painel6_2021.jpg
 │   │   │   │   │   ├── 008_painel6_2021.jpg
-│   │   │   │   │   └── 009_painel6_2021.jpg
+│   │   │   │   │   ├── 009_painel6_2021.jpg
+│   │   │   │   │   ├── 010_painel6_2021.jpg
+│   │   │   │   │   ├── 011_painel6_2021.jpg
+│   │   │   │   │   └── 012_painel6_2021.jpg
 │   │   │   │   └── tree2021.txt
 │   │   │   ├── 2022
 │   │   │   │   ├── mesadeabertura
@@ -251,22 +256,22 @@
 │   │   │   │   └── tree2022.txt
 │   │   │   ├── 2023
 │   │   │   │   ├── homenagemministro
-│   │   │   │   │   ├── 9V9C9706.jpg
-│   │   │   │   │   ├── 9V9C9709.jpg
-│   │   │   │   │   ├── 9V9C9749.jpg
-│   │   │   │   │   ├── dsc04120_53313696072_o.jpg
-│   │   │   │   │   ├── dsc04122_53314917854_o.jpg
-│   │   │   │   │   ├── dsc04132_53314563076_o.jpg
-│   │   │   │   │   ├── dsc04170_53313696022_o.jpg
-│   │   │   │   │   ├── dsc04205_53314805278_o.jpg
-│   │   │   │   │   ├── dsc05900_53314562161_o.jpg
-│   │   │   │   │   ├── dsc05907_53313695257_o.jpg
-│   │   │   │   │   ├── dsc06012_53314803423_o.jpg
-│   │   │   │   │   ├── dsc06056_53314803348_o.jpg
-│   │   │   │   │   ├── dsc06057_53314803288_o.jpg
-│   │   │   │   │   ├── dsc06067_53314803268_o.jpg
-│   │   │   │   │   ├── dsc06085_53314803253_o.jpg
-│   │   │   │   │   └── dsc06148_53314915539_o.jpg
+│   │   │   │   │   ├── 001_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 002_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 003_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 004_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 005_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 006_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 007_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 008_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 009_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 010_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 011_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 012_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 013_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 014_homenagemMinMathias_2023.jpg
+│   │   │   │   │   ├── 015_homenagemMinMathias_2023.jpg
+│   │   │   │   │   └── 016_homenagemMinMathias_2023.jpg
 │   │   │   │   ├── kroll.jpg
 │   │   │   │   ├── medarbb.jpg
 │   │   │   │   ├── mesadeabertura
@@ -752,9 +757,135 @@
 │   │   │   │   │   ├── 011_seminario_2024_painel6.jpg
 │   │   │   │   │   └── 10_seminario_2024_painel6.jpg
 │   │   │   │   └── tree2024
+│   │   │   ├── 2024.zip
+│   │   │   ├── 2025
+│   │   │   │   ├── 001_chegada
+│   │   │   │   │   ├── 001chegada.jpg
+│   │   │   │   │   ├── 002chegada.jpg
+│   │   │   │   │   ├── 003chegada.jpg
+│   │   │   │   │   └── 004chegada.jpg
+│   │   │   │   ├── 002_abertura
+│   │   │   │   │   ├── 001mesaabertura.jpg
+│   │   │   │   │   ├── 002mesaabertura.jpg
+│   │   │   │   │   ├── 003mesaabertura.jpg
+│   │   │   │   │   ├── 004mesaabertura.jpg
+│   │   │   │   │   ├── 005mesaabertura.jpg
+│   │   │   │   │   ├── 006mesaabertura.jpg
+│   │   │   │   │   ├── 007mesaabertura.jpg
+│   │   │   │   │   ├── 008mesaabertura.jpg
+│   │   │   │   │   ├── 009mesaabertura.jpg
+│   │   │   │   │   ├── 010mesaabertura.jpg
+│   │   │   │   │   ├── 011mesaabertura.jpg
+│   │   │   │   │   ├── 012mesaabertura.jpg
+│   │   │   │   │   └── 013mesaabertura.jpg
+│   │   │   │   ├── 003_painel1
+│   │   │   │   │   ├── 001painel1.jpg
+│   │   │   │   │   ├── 002painel1.jpg
+│   │   │   │   │   ├── 003painel1.jpg
+│   │   │   │   │   ├── 004painel1.jpg
+│   │   │   │   │   ├── 005painel1.jpg
+│   │   │   │   │   ├── 006painel1.jpg
+│   │   │   │   │   ├── 007painel1.jpg
+│   │   │   │   │   ├── 008painel1.jpg
+│   │   │   │   │   ├── 009painel1.jpg
+│   │   │   │   │   ├── 010painel1.jpg
+│   │   │   │   │   ├── 011painel1.jpg
+│   │   │   │   │   └── 012painel1.jpg
+│   │   │   │   ├── 004_painel2
+│   │   │   │   │   ├── 001painel2.jpg
+│   │   │   │   │   ├── 002painel2.jpg
+│   │   │   │   │   ├── 003painel2.jpg
+│   │   │   │   │   ├── 004painel2.jpg
+│   │   │   │   │   ├── 005painel2.jpg
+│   │   │   │   │   ├── 006painel2.jpg
+│   │   │   │   │   ├── 007painel2.jpg
+│   │   │   │   │   ├── 008painel2.jpg
+│   │   │   │   │   ├── 009painel2.jpg
+│   │   │   │   │   ├── 010painel2.jpg
+│   │   │   │   │   ├── 011painel2.jpg
+│   │   │   │   │   ├── 012painel2.jpg
+│   │   │   │   │   ├── 013painel2.jpg
+│   │   │   │   │   ├── 014painel2.jpg
+│   │   │   │   │   ├── 015painel2.jpg
+│   │   │   │   │   ├── 016painel2.jpg
+│   │   │   │   │   ├── 017painel2.jpg
+│   │   │   │   │   ├── 018painel2.jpg
+│   │   │   │   │   ├── 019painel2.jpg
+│   │   │   │   │   ├── 020painel2.jpg
+│   │   │   │   │   ├── 021painel2.jpg
+│   │   │   │   │   ├── 022painel2.jpg
+│   │   │   │   │   ├── 023painel2.jpg
+│   │   │   │   │   ├── 024painel2.jpg
+│   │   │   │   │   ├── 025painel2.jpg
+│   │   │   │   │   └── 026painel2.jpg
+│   │   │   │   ├── 005_painel3
+│   │   │   │   │   ├── 001painel3.jpg
+│   │   │   │   │   ├── 002painel3.jpg
+│   │   │   │   │   ├── 003painel3.jpg
+│   │   │   │   │   ├── 004painel3.jpg
+│   │   │   │   │   ├── 005painel3.jpg
+│   │   │   │   │   ├── 006painel3.jpg
+│   │   │   │   │   ├── 007painel3.jpg
+│   │   │   │   │   ├── 008painel3.jpg
+│   │   │   │   │   ├── 009painel3.jpg
+│   │   │   │   │   ├── 010painel3.jpg
+│   │   │   │   │   ├── 011painel3.jpg
+│   │   │   │   │   ├── 012painel3.jpg
+│   │   │   │   │   ├── 013painel3.jpg
+│   │   │   │   │   └── 014painel3.jpg
+│   │   │   │   ├── 006_painel4
+│   │   │   │   │   ├── 001painel4.jpg
+│   │   │   │   │   ├── 002painel4.jpg
+│   │   │   │   │   ├── 003painel4.jpg
+│   │   │   │   │   ├── 004painel4.jpg
+│   │   │   │   │   ├── 005painel4.jpg
+│   │   │   │   │   ├── 006painel4.jpg
+│   │   │   │   │   ├── 007painel4.jpg
+│   │   │   │   │   ├── 008painel4.jpg
+│   │   │   │   │   ├── 009painel4.jpg
+│   │   │   │   │   ├── 010painel4.jpg
+│   │   │   │   │   ├── 011painel4.jpg
+│   │   │   │   │   ├── 012painel4.jpg
+│   │   │   │   │   ├── 013painel4.jpg
+│   │   │   │   │   ├── 014painel4.jpg
+│   │   │   │   │   ├── 015painel4.jpg
+│   │   │   │   │   ├── 016painel4.jpg
+│   │   │   │   │   ├── 017painel4.jpg
+│   │   │   │   │   ├── 018painel4.jpg
+│   │   │   │   │   ├── 019painel4.jpg
+│   │   │   │   │   ├── 020painel4.jpg
+│   │   │   │   │   ├── 021painel4.jpg
+│   │   │   │   │   ├── 022painel4.jpg
+│   │   │   │   │   └── 023painel4.jpg
+│   │   │   │   ├── 007_painel5
+│   │   │   │   │   ├── 001painel5.jpg
+│   │   │   │   │   ├── 002painel5.jpg
+│   │   │   │   │   ├── 003painel5.jpg
+│   │   │   │   │   ├── 004painel5.jpg
+│   │   │   │   │   ├── 005painel5.jpg
+│   │   │   │   │   ├── 006painel5.jpg
+│   │   │   │   │   ├── 007painel5.jpg
+│   │   │   │   │   ├── 008painel5.jpg
+│   │   │   │   │   ├── 009painel5.jpg
+│   │   │   │   │   ├── 010painel5.jpg
+│   │   │   │   │   ├── 011painel5.jpg
+│   │   │   │   │   ├── 012painel5.jpg
+│   │   │   │   │   ├── 013painel5.jpg
+│   │   │   │   │   ├── 014painel5.jpg
+│   │   │   │   │   ├── 015painel5.jpg
+│   │   │   │   │   ├── 016painel5.jpg
+│   │   │   │   │   └── 017painel5.jpg
+│   │   │   │   └── 008_painel6
+│   │   │   │       ├── 001painel6.jpg
+│   │   │   │       ├── 002painel6.jpg
+│   │   │   │       ├── 003painel6.jpg
+│   │   │   │       ├── 004painel6.jpg
+│   │   │   │       └── 005painel6.jpg
 │   │   │   └── sponsors
+│   │   │       ├── abraahao.png
 │   │   │       ├── baker.png
 │   │   │       ├── bermudes.png
+│   │   │       ├── bermudes.svg
 │   │   │       ├── bicalho.png
 │   │   │       ├── enforce.png
 │   │   │       ├── exm.png
@@ -771,16 +902,21 @@
 │   │   │       ├── triunfae.png
 │   │   │       └── wald.png
 │   │   ├── foto_sobre_ibra-u419-fr.png
+│   │   ├── gilson-marques.jpeg
 │   │   ├── hero_mobile.jpg
 │   │   ├── news
+│   │   │   ├── img_newsIbra.jpg
 │   │   │   ├── news001_seminario.jpeg
 │   │   │   ├── news002_vetopresidencial.jpg
-│   │   │   └── news003_seminarioII.jpeg
+│   │   │   ├── news003_seminarioII.jpeg
+│   │   │   └── vii-seminario.jpg
+│   │   ├── PAULO.jpg
 │   │   ├── placeholder_pessoa.jpg
 │   │   ├── selo-integridade.png
+│   │   ├── vinicius-poit.jpeg
 │   │   ├── Xbackground_hero_seminario.jpg
 │   │   ├── Xhero_mobile.png
-│   │   └── XXbackground_hero_seminario.jpg
+│   │   └── XXXbackground_hero_seminario.jpg
 │   └── logos
 │       ├── logo_branco_ibra.png
 │       └── logo_final_ibra.png
@@ -795,18 +931,23 @@
 │   ├── evento-2024.html
 │   ├── evento-template.html
 │   └── seminario-2024.html
+├── externos
+│   ├── XXseminario-2024-autoplay-fix2.html
+│   └── XXseminario-2024.html
+├── ibrativos.txt
 ├── index.html
 ├── js
 │   └── common.js
 ├── map.csv
+├── noticia.html
 ├── package.json
-├── renomear_copy.py
-├── renomear.py
+├── seminario-2020.html
 ├── seminario-2021.html
 ├── seminario-2022.html
 ├── seminario-2023.html
 ├── seminario-2024.html
+├── seminario-2025.html
 ├── treeIbra.txt
 └── treeRootProject.txt
 
-57 directories, 753 files
+67 directories, 884 files
